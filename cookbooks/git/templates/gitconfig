@@ -1,0 +1,3 @@
+[user]
+  name  = <%= node.user %>
+  email = <%= node.email %>
