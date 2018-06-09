@@ -1,3 +1,10 @@
+[commit]
+  gpgsign = true
+
+[gpg]
+  program = gpg
+
 [user]
   name  = <%= node.user %>
   email = <%= node.email %>
+  signingkey = <%= ENV["GPG_KEY_ID"] %>
