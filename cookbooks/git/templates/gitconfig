@@ -5,6 +5,6 @@
   program = gpg
 
 [user]
-  name  = <%= node.user %>
-  email = <%= node.email %>
+  name  = <%= $secret.user %>
+  email = <%= $secret.email %>
   signingkey = <%= ENV["GPG_KEY_ID"] %>

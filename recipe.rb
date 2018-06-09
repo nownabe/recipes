@@ -4,6 +4,8 @@
 #   puts
 # end
 
+include_recipe "./secret"
+
 $tmpdir = "#{Dir.tmpdir}/mitamae"
 Dir.mkdir($tmpdir) unless File.exist?($tmpdir)
 
