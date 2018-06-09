@@ -5,3 +5,4 @@
 # end
 
 include_recipe "./cookbooks/git"
+include_recipe "./cookbooks/mozc"
