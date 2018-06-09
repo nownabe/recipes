@@ -18,9 +18,16 @@ Decrypt `secret.rb`.
 $ ${HOME}/bin/cryptography dec -in secret.rb.enc -out secret.rb -key ${ENCRYPTION_KEY}
 ```
 
+Create `node.yaml`.
+
+```bash
+$ cp node.yaml.example node.yaml
+$ vi node.yaml
+```
+
 # Configure
 
 ```bash
-$ ${HOME}/bin/mitamae local recipe.rb --dry-run
-$ ${HOME}/bin/mitamae local recipe.rb
+$ ${HOME}/bin/mitamae local recipe.rb -y node.yaml --dry-run
+$ ${HOME}/bin/mitamae local recipe.rb -y node.yaml
 ```

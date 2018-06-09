@@ -7,4 +7,4 @@
 [user]
   name  = <%= $secret.user %>
   email = <%= $secret.email %>
-  signingkey = <%= ENV["GPG_KEY_ID"] %>
+  signingkey = <%= node.gpg_key_id %>
