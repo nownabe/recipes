@@ -7,7 +7,9 @@ recipes
 
 Install mitamae and cryptography command and clone this repository.
 
-```
+```bash
+$ sudo apt install curl
+$ curl -sSL https://raw.githubusercontent.com/nownabe/recipes/master/init.sh | bash
 ```
 
 Decrypt `node.yaml`.
