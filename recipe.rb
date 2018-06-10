@@ -13,6 +13,8 @@ puts "tempdir: #{$tmpdir}"
 
 include_recipe "./cookbooks/build-essentials"
 include_recipe "./cookbooks/git"
+include_recipe "./cookbooks/anyenv"
+
 include_recipe "./cookbooks/neovim"
 include_recipe "./cookbooks/slack"
 
