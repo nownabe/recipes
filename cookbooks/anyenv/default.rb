@@ -1,4 +1,5 @@
 envs = {
+  go:   { env: "goenv", version: "1.10.3" },
   ruby: { env: "rbenv", version: "2.5.1" },
 }
 
