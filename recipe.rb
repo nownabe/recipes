@@ -13,3 +13,5 @@ puts "tempdir: #{$tmpdir}"
 
 include_recipe "./cookbooks/git"
 include_recipe "./cookbooks/slack"
+
+include_recipe "./cookbooks/packages"
