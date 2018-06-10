@@ -23,7 +23,7 @@ end
 envs.each do |lang, env|
   execute "Install #{env[:env]}" do
     command env_cmd.call("anyenv install #{env[:env]}")
-    not_if env_cmd.call("anyenv versions | grep -q env[:env]")
+    not_if env_cmd.call("anyenv versions | grep -q #{env[:env]}")
   end
 
   execute "Install #{lang} #{env[:version]}" do
