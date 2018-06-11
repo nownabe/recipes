@@ -6,6 +6,7 @@
   liblzma-dev
   libmysqlclient-dev
   libncurses5-dev
+  libopenblas-dev
   libreadline-dev
   libssl-dev
   libsqlite3-dev
