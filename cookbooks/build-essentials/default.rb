@@ -4,6 +4,7 @@
   libcurl4-openssl-dev
   libgdbm-dev
   liblzma-dev
+  libmysqlclient-dev
   libncurses5-dev
   libreadline-dev
   libssl-dev
