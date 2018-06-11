@@ -1,4 +1,5 @@
 %w(
+  github.com/golang/dep/cmd/dep
   github.com/motemen/ghq
 ).each do |pkg|
   execute "Install #{pkg}" do
