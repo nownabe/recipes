@@ -1,6 +1,9 @@
 [commit]
   gpgsign = true
 
+[ghq]
+  root = ~/src
+
 [gpg]
   program = gpg
 
