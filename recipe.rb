@@ -26,6 +26,7 @@ include_recipe "./cookbooks/docker"
 include_recipe "./cookbooks/fzf"
 include_recipe "./cookbooks/gcloud"
 include_recipe "./cookbooks/neovim"
+include_recipe "./cookbooks/ruby"
 include_recipe "./cookbooks/slack"
 include_recipe "./cookbooks/terraform"
 
