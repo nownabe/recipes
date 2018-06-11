@@ -6,6 +6,9 @@
   gpgsign = true
   template = /home/<%= $secret.user %>/.commit_template
 
+[core]
+  editor = nvim
+
 [diff]
   compactionHeuristic = true
 
