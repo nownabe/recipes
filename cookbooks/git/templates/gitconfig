@@ -4,6 +4,7 @@
 
 [commit]
   gpgsign = true
+  template = /home/<%= $secret.user %>/.commit_template
 
 [diff]
   compactionHeuristic = true

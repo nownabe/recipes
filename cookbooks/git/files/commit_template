@@ -1,0 +1,36 @@
+# ==== Emojis ====
+# 🌟  :sparkles: Adds a new feature or updates an existing feature
+# 🐛  :bug:      Fixes a bug
+# ⚡  :zap:      Improves performance of a feature
+# 🔒  :lock:     Fixes a security issue
+# 🚿  :shower:   Refactors an existing feature
+# 👕  :tshirt:   Fixes a code style violation
+# 🔥  :fire:     Deletes useless features, codes or files
+# 📝  :pencil:   Adds or updates a documentation
+# 👮  :cop:      Adds missing tests or correcs existing tests
+# 🆙  :up:       Updates dependencies
+# 🔈  :speaker:  Adds a logging or an error reporting
+# 🔇  :mute:     Removes a logging or an error reporting
+# 🔧  :wrench:   Configures application
+# 🏭  :factory:  Adds or updates CI features, automations or any project basements
+
+# 👍  :+1:       Bump up version
+# 🌱  :seedling: First commit
+# 🍵  :tea:      Take a break
+# 🍣  :sushi:    Give me sushi
+
+# ==== Format ====
+# :emoji: Subject
+#
+# Commit body...
+
+# ==== The Seven Rules ====
+# 1. Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+#
+# How to Write a Git Commit Message http://chris.beams.io/posts/git-commit/
