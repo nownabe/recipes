@@ -17,6 +17,7 @@ include_recipe "./cookbooks/anyenv"
 
 include_recipe "./cookbooks/neovim"
 include_recipe "./cookbooks/slack"
+include_recipe "./cookbooks/zsh"
 
 include_recipe "./cookbooks/packages"
 include_recipe "./cookbooks/go_packages"
