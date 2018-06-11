@@ -11,11 +11,17 @@ Dir.mkdir($tmpdir) unless File.exist?($tmpdir)
 
 puts "tempdir: #{$tmpdir}"
 
+execute "Update" do
+  user "root"
+  command "apt update"
+end
+
 include_recipe "./cookbooks/build-essentials"
 include_recipe "./cookbooks/git"
 include_recipe "./cookbooks/zsh"
 include_recipe "./cookbooks/anyenv"
 
+include_recipe "./cookbooks/docker"
 include_recipe "./cookbooks/fzf"
 include_recipe "./cookbooks/gcloud"
 include_recipe "./cookbooks/neovim"
