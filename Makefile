@@ -4,4 +4,4 @@ apply:
 
 .PHONY: dry-run
 dry-run:
-	mitamae local recipe.rb -y node.yaml
+	mitamae local recipe.rb -y node.yaml --dry-run
