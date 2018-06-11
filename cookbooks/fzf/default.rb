@@ -13,3 +13,7 @@ execute "Unarchive fzf" do
   action :nothing
   command "tar xf #{archive} -C /home/#{$secret.user}/bin"
 end
+
+remote_file "/home/#{$secret.user}/.zsh.d/fzf.zsh" do
+  source "files/fzf.zsh"
+end
