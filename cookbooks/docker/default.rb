@@ -34,3 +34,5 @@ execute "Make users belong to docker group" do
   notifies :restart, "service[docker]"
   not_if "id #{$secret.user} | grep -q docker"
 end
+
+include_recipe "./compose"
