@@ -9,6 +9,7 @@ execute "Set default shell to zsh" do
 end
 
 directory "/home/#{$secret.user}/.zsh.d"
+directory "/home/#{$secret.user}/.zsh.d/completion"
 
 remote_file "/home/#{$secret.user}/.zshrc" do
   source "files/zshrc"
