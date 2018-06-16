@@ -17,6 +17,7 @@ execute "Update" do
 end
 
 include_recipe "./cookbooks/build-essentials"
+include_recipe "./cookbooks/sysctl"
 include_recipe "./cookbooks/git"
 include_recipe "./cookbooks/zsh"
 include_recipe "./cookbooks/anyenv"
