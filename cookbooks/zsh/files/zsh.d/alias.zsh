@@ -17,3 +17,5 @@ alias br='bundle exec rails'
 alias bru='bundle exec ruby'
 alias bra='bundle exec rake'
 alias bp='bundle exec pry'
+
+alias open='xdg-open'
