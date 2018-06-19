@@ -4,5 +4,6 @@
  "nfs-common", #  NFS support files common to client and server\
  "pinta", # Simple drawing/painting program\
  "silversearcher-ag", # very fast grep-like program, alternative to ack-grep\
+ "xdg-utils", # desktop integration utilities from freedesktop.org\
  "webp" # Lossy compression of digital photographic images.\
 ].each do |pkg| package pkg do user "root" end end
