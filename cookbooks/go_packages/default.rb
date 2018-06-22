@@ -1,4 +1,5 @@
 %w(
+  golang.org/x/tools/cmd/goimports
   github.com/golang/dep/cmd/dep
   github.com/motemen/ghq
 ).each do |pkg|
