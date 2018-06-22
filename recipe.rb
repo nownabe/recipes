@@ -34,4 +34,3 @@ include_recipe "./cookbooks/slack"
 include_recipe "./cookbooks/terraform"
 
 include_recipe "./cookbooks/packages"
-include_recipe "./cookbooks/go_packages"
