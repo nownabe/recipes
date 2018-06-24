@@ -7,6 +7,7 @@
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
   "pinta",             # Simple drawing/painting program
   "silversearcher-ag", # very fast grep-like program, alternative to ack-grep
+  "tree",              # displays an indented directory tree, in color
   "xdg-utils",         # desktop integration utilities from freedesktop.org
   "webp",              # Lossy compression of digital photographic images.
 ].each do |pkg|
