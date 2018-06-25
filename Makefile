@@ -1,5 +1,5 @@
-.PHONY: apply
-apply:
+.PHONY: run
+run:
 	mitamae local recipe.rb -y node.yaml
 
 .PHONY: dry-run
