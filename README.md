@@ -68,5 +68,5 @@ Generate SSH key pair.
 $ ssh-keygen -t ed25519
 ```
 
-Then add public key into [GitHub](https://github.com/settings/keys).
+Then add public key into [GitHub](https://github.com/settings/keys) and [GitLab.com](https://gitlab.com/profile/keys).
 
