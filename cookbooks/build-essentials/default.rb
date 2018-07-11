@@ -1,4 +1,5 @@
 %w(
+  autoconf
   build-essential
   libbz2-dev
   libcurl4-openssl-dev
@@ -11,6 +12,7 @@
   libreadline-dev
   libssl-dev
   libsqlite3-dev
+  libtool
   tcl-dev
   tk-dev
   zlib1g-dev
