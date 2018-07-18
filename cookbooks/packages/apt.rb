@@ -1,4 +1,5 @@
 [
+  "apache2-utils",     # Apache HTTP Server (utility programs for web servers)
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
