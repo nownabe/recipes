@@ -1,5 +1,6 @@
 %w(
   awscli
+  neovim
   pipenv
 ).each do |pkg|
   execute "Install #{pkg}" do
