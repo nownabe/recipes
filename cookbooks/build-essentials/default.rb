@@ -1,5 +1,6 @@
 %w(
   autoconf
+  bison
   build-essential
   libbz2-dev
   libcurl4-openssl-dev
