@@ -1,4 +1,5 @@
 [
+  "apache2-utils",     # Apache HTTP Server (utility programs for web servers)
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
@@ -11,6 +12,7 @@
   "tree",              # displays an indented directory tree, in color
   "xdg-utils",         # desktop integration utilities from freedesktop.org
   "webp",              # Lossy compression of digital photographic images.
+  "whois",             # intelligent WHOIS client
 ].each do |pkg|
   package pkg do
     user "root"
