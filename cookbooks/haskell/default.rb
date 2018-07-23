@@ -8,3 +8,7 @@ execute "stack setup" do
   action :nothing
   command "stack setup"
 end
+
+remote_file "/home/#{$secret.user}/.zsh.d/stack.zsh" do
+  source "files/stack.zsh"
+end
