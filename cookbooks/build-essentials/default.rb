@@ -3,6 +3,8 @@
   bison
   build-essential
   libbz2-dev
+  libc++1
+  libc++abi1
   libcurl4-openssl-dev
   libgdbm-dev
   liblzma-dev
