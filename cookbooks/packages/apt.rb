@@ -1,6 +1,8 @@
 [
   "apache2-utils",     # Apache HTTP Server (utility programs for web servers)
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
+  "exfat-fuse",        # read and write exFAT driver for FUSE
+  "exfat-utils",       # utilities to create, check, label and dump exFAT filesystem
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
   "graphviz",          # rich set of graph drawing tools
