@@ -1,7 +1,7 @@
 url = "https://discordapp.com/api/download?platform=linux&format=deb"
 
 package_path = File.join($tmpdir, "discord.deb")
-check_installation = "dpkg-query -f '${Status}' -W unkounko | grep -q 'install ok installed'"
+check_installation = "dpkg-query -f '${Status}' -W discord | grep -q 'install ok installed'"
 
 execute "Download discord" do
   command "curl -L -o #{package_path} '#{url}'"
