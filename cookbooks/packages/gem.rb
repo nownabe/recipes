@@ -1,5 +1,6 @@
 %w(
   grpc-tools
+  travis
 ).each do |pkg|
   execute "Install #{pkg} gem" do
     command $anyenv_cmd.call("gem install #{pkg}")
