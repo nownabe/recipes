@@ -6,16 +6,6 @@ envs = {
   ruby: { env: "rbenv", version: "2.5.1" },
 }
 
-$anyenv_cmd = proc do |cmd|
-  <<-CMD
-    PATH="${HOME}/.anyenv/bin:${PATH}"
-    bash -c '
-      eval "$(anyenv init -)"
-      #{cmd}
-    '
-  CMD
-end
-
 git "/home/#{$secret.user}/.anyenv" do
   repository "https://github.com/riywo/anyenv.git"
 end
