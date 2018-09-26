@@ -6,6 +6,7 @@
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
   "graphviz",          # rich set of graph drawing tools
+  "jq",                # lightweight and flexible command-line JSON processor
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nfs-common",        # NFS support files common to client and server
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
