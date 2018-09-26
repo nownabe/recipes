@@ -29,3 +29,11 @@ end
     source "files/zsh.d/#{name}.zsh"
   end
 end
+
+%w(
+  kubectl
+).each do |name|
+  remote_file "/home/#{$secret.user}/.zsh.d/completion/_#{name}" do
+    source "files/zsh.d/completion/_#{name}"
+  end
+end
