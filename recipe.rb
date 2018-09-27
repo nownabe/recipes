@@ -33,6 +33,7 @@ else
   include_recipe "./cookbooks/gsettings"
   include_recipe "./cookbooks/haskell"
   include_recipe "./cookbooks/helm"
+  include_recipe "./cookbooks/kubernetes"
   include_recipe "./cookbooks/neovim"
   include_recipe "./cookbooks/protobuf"
   include_recipe "./cookbooks/python"
