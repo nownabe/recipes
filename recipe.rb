@@ -40,6 +40,7 @@ else
   include_recipe "./cookbooks/ruby"
   include_recipe "./cookbooks/slack"
   include_recipe "./cookbooks/terraform"
+  include_recipe "./cookbooks/visualstudiocode"
 
   include_recipe "./cookbooks/packages"
 end
