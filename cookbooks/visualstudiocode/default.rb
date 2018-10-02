@@ -19,3 +19,14 @@ directory "/home/#{$secret.user}/.config/Code/User"
 link "/home/#{$secret.user}/.config/Code/User/settings.json" do
   to File.expand_path("../files/settings.json", __FILE__)
 end
+
+%w(
+  eg2.tslint
+  esbenp.prettier-vscode
+  vscodevim.vim
+).each do |ext|
+  execute "Install VS Code extension #{ext}" do
+    command "code --instal-extension #{ext}"
+    not_if "code --list-extensions | grep -q '#{ext}'"
+  end
+end
