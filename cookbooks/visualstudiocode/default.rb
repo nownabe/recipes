@@ -13,3 +13,9 @@ execute "Install Visual Studio Code" do
   command "dpkg -i #{package_path}"
   not_if check_installation
 end
+
+directory "/home/#{$secret.user}/.config/Code/User"
+
+link "/home/#{$secret.user}/.config/Code/User/settings.json" do
+  to File.expand_path("../files/settings.json", __FILE__)
+end

@@ -1,0 +1,8 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
