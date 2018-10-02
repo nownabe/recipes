@@ -1,7 +1,7 @@
 url = "https://go.microsoft.com/fwlink/?LinkID=760868"
 
 package_path = File.join($tmpdir, "visualstudiocode.rb")
-check_installation = "dpkg-query -f '${Status}' -W visualstudiocode | grep -q 'install ok installed'"
+check_installation = "dpkg-query -f '${Status}' -W code | grep -q 'install ok installed'"
 
 execute "Download Visual Studio Code" do
   command "curl -L -o #{package_path} '#{url}'"
