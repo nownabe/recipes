@@ -1,5 +1,5 @@
 envs = {
-  go:   { env: "goenv", version: "1.10.3" },
+  go:   { env: "goenv", version: "1.11.1" },
   java: { env: "jenv" },
   node: { env: "ndenv", version: "v10.4.0" },
   python: { env: "pyenv", version: "3.6.5" },
