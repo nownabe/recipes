@@ -2,7 +2,7 @@ envs = {
   go:   { env: "goenv", version: "1.11.1" },
   java: { env: "jenv" },
   node: { env: "ndenv", version: "v10.11.0" },
-  python: { env: "pyenv", version: "3.6.5" },
+  python: { env: "pyenv", version: "3.7.0" },
   ruby: { env: "rbenv", version: "2.5.1" },
 }
 
