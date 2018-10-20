@@ -7,6 +7,7 @@
   libc++1
   libc++abi1
   libcurl4-openssl-dev
+  libffi-dev
   libgdbm-dev
   liblzma-dev
   libmysqlclient-dev
