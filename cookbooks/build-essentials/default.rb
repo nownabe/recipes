@@ -2,6 +2,7 @@
   autoconf
   bison
   build-essential
+  curl
   libbz2-dev
   libc++1
   libc++abi1
