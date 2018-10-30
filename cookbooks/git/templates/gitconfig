@@ -25,3 +25,6 @@
   name  = <%= $secret.user %>
   email = <%= $secret.email %>
   signingkey = <%= node.gpg_key_id %>
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
