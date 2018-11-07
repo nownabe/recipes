@@ -25,6 +25,7 @@ end
   eg2.tslint
   esbenp.prettier-vscode
   gerane.theme-dark-dracula
+  mechatroner.rainbow-csv
   oderwat.indent-rainbow
   vscodevim.vim
 ).each do |ext|
