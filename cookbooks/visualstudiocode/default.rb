@@ -21,6 +21,7 @@ link "/home/#{$secret.user}/.config/Code/User/settings.json" do
 end
 
 %w(
+  coenraads.bracket-pair-colorizer
   eg2.tslint
   esbenp.prettier-vscode
   vscodevim.vim
