@@ -24,6 +24,7 @@ end
   coenraads.bracket-pair-colorizer
   eg2.tslint
   esbenp.prettier-vscode
+  gerane.theme-dark-dracula
   vscodevim.vim
 ).each do |ext|
   execute "Install VS Code extension #{ext}" do
