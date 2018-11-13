@@ -6,6 +6,7 @@
   github.com/kubernetes-sigs/kustomize
   github.com/motemen/ghq
   github.com/nsf/gocode
+  github.com/sourcegraph/go-langserver
 ).each do |pkg|
   execute "Install #{pkg}" do
     command $anyenv_cmd.call("GOPATH=${HOME} go get -u #{pkg}")
