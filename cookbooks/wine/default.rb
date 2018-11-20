@@ -14,3 +14,5 @@ end
 package "winehq-stable" do
   user "root"
 end
+
+include_recipe "./qaac"
