@@ -11,6 +11,7 @@
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nfs-common",        # NFS support files common to client and server
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
+  "p7zip",             # 7zr file archiver with high compression ratio
   "pinta",             # Simple drawing/painting program
   "silversearcher-ag", # very fast grep-like program, alternative to ack-grep
   "tree",              # displays an indented directory tree, in color
