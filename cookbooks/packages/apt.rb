@@ -1,6 +1,7 @@
 [
   "apache2-utils",     # Apache HTTP Server (utility programs for web servers)
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
+  "cdrdao",            # records CDs in Disk-At-Once (DAO) mode
   "deluge",            # bittorrent client written in Python/PyGTK
   "exfat-fuse",        # read and write exFAT driver for FUSE
   "exfat-utils",       # utilities to create, check, label and dump exFAT filesystem
