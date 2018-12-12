@@ -1,4 +1,4 @@
-golangci_lint_version = "1.11.2"
+golangci_lint_version = "1.12.3"
 
 golangci_lint_check_command = <<CMD
   [ -x /home/#{$secret.user}/bin/golangci-lint ] && \
