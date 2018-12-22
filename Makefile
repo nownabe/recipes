@@ -6,8 +6,8 @@ run:
 dry-run:
 	mitamae local recipe.rb -y node.yaml --dry-run
 
-secret.rb.enc: secret.rb
+secret.rb.enc:
 	@cryptography enc -in $< -out $@ -key ${ENCRYPTION_KEY}
 
-secret.rb: secret.rb.enc
+secret.rb:
 	@cryptography dec -in $< -out $@ -key ${ENCRYPTION_KEY}
