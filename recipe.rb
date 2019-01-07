@@ -30,6 +30,7 @@ else
   include_recipe "./cookbooks/fzf"
   include_recipe "./cookbooks/gcloud"
   include_recipe "./cookbooks/github"
+  include_recipe "./cookbooks/gitlab"
   include_recipe "./cookbooks/go"
   include_recipe "./cookbooks/gsettings"
   include_recipe "./cookbooks/haskell"
