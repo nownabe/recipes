@@ -11,7 +11,7 @@
   github.com/sourcegraph/go-langserver
 ).each do |pkg|
   execute "Install #{pkg}" do
-    command $anyenv_cmd.call("GOPATH=${HOME} go get -u #{pkg}")
+    command $anyenv_cmd.call("GO111MODULE=off GOPATH=${HOME} go get -u #{pkg}")
     not_if  "[ -e ${HOME}/src/#{pkg} ]"
   end
 end
