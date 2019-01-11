@@ -1,5 +1,6 @@
 %w(
   bower
+  grpc-tools
   pulp
   purescript
   typescript
