@@ -8,6 +8,7 @@
   "exfat-utils",       # utilities to create, check, label and dump exFAT filesystem
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
+  "ghex",              # GNOME Hex editor for files
   "graphviz",          # rich set of graph drawing tools
   "jq",                # lightweight and flexible command-line JSON processor
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
