@@ -17,6 +17,7 @@
   libopenblas-dev
   libpq-dev
   libreadline-dev
+  libssh2-1-dev
   libssl-dev
   libsqlite3-dev
   libtool
