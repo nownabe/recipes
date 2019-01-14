@@ -2,6 +2,7 @@
   autoconf
   bison
   build-essential
+  cmake
   curl
   libbz2-dev
   libc++1
