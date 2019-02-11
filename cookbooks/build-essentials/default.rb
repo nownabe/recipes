@@ -2,6 +2,7 @@
   autoconf
   bison
   build-essential
+  cmake
   curl
   libbz2-dev
   libc++1
@@ -9,12 +10,14 @@
   libcurl4-openssl-dev
   libffi-dev
   libgdbm-dev
+  libicu-dev
   liblzma-dev
   libmysqlclient-dev
   libncurses5-dev
   libopenblas-dev
   libpq-dev
   libreadline-dev
+  libssh2-1-dev
   libssl-dev
   libsqlite3-dev
   libtool
