@@ -12,6 +12,7 @@
   "graphviz",          # rich set of graph drawing tools
   "jq",                # lightweight and flexible command-line JSON processor
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
+  "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
   "p7zip",             # 7zr file archiver with high compression ratio
