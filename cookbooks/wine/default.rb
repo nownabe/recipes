@@ -1,6 +1,6 @@
 execute "Add WineHQ key" do
   user "root"
-  command "curl -fsSL https://dl.winehq.org/wine-builds/Release.key | apt-key add -"
+  command "curl -fsSL https://dl.winehq.org/wine-builds/winehq.key | apt-key add -"
   not_if "apt-key list | grep -q WineHQ"
 end
 
