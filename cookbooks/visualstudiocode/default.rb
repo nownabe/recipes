@@ -22,6 +22,7 @@ end
 
 %w(
   coenraads.bracket-pair-colorizer
+  davidanson.vscode-markdownlint
   dbaeumer.vscode-eslint
   eg2.tslint
   esbenp.prettier-vscode
