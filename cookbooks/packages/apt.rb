@@ -14,6 +14,7 @@
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
+  "nkf",               # Network Kanji code conversion Filter
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
   "p7zip",             # 7zr file archiver with high compression ratio
   "p7zip-full",        # 7z and 7za file archivers with high compression ratio
