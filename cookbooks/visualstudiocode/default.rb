@@ -22,6 +22,7 @@ end
 
 %w(
   coenraads.bracket-pair-colorizer
+  dbaeumer.vscode-eslint
   eg2.tslint
   esbenp.prettier-vscode
   gerane.theme-dark-dracula
