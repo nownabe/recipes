@@ -20,6 +20,10 @@ link "/home/#{$secret.user}/.config/Code/User/settings.json" do
   to File.expand_path("../files/settings.json", __FILE__)
 end
 
+link "/home/#{$secret.user}/.config/Code/User/keybindings.json" do
+  to File.expand_path("../files/keybindings.json", __FILE__)
+end
+
 %w(
   coenraads.bracket-pair-colorizer
   davidanson.vscode-markdownlint
