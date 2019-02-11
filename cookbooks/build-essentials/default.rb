@@ -21,6 +21,8 @@
   libssl-dev
   libsqlite3-dev
   libtool
+  p7zip
+  p7zip-full
   tcl-dev
   tk-dev
   zlib1g-dev
