@@ -30,7 +30,7 @@ end
   vscodevim.vim
 ).each do |ext|
   execute "Install VS Code extension #{ext}" do
-    command "code --instal-extension #{ext}"
+    command "code --install-extension #{ext}"
     not_if "code --list-extensions | grep -q '#{ext}'"
   end
 end
