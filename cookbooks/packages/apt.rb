@@ -13,6 +13,7 @@
   "graphviz",          # rich set of graph drawing tools
   "jq",                # lightweight and flexible command-line JSON processor
   "lame",              # MP3 encoding library (frontend)
+  "lhasa",             # lzh archive decompressor
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
