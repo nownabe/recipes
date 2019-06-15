@@ -24,6 +24,7 @@ else
   include_recipe "./cookbooks/anyenv"
 
   include_recipe "./cookbooks/asciinema"
+  include_recipe "./cookbooks/charles"
   include_recipe "./cookbooks/direnv"
   include_recipe "./cookbooks/discord"
   include_recipe "./cookbooks/docker"
