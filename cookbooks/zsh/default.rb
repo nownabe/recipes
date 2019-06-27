@@ -22,6 +22,7 @@ end
   02_anyenv
   alias
   bind
+  docker
   history
   prompt
 ).each do |name|
