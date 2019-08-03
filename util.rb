@@ -38,3 +38,32 @@ define :download_binary,
     command "chmod +x #{bin_path}"
   end
 end
+
+define :install_tar,
+  name: nil,
+  url: nil,
+  check: :existence do
+
+  bin_path = "/home/#{$secret.user}/bin/#{params[:name]}"
+  tar_path = File.join($tmpdir, "#{params[:name]}.tar.gz")
+
+  not_if = case params[:check]
+    when :existence
+      "[ -x #{bin_path} ]"
+    when Hash
+      "#{bin_path} #{params[:check]} | grep -q '#{params[:check][:expected]}'"
+    else
+      raise "Unknown check method"
+    end
+
+  execute "Download #{params[:name]}" do
+    command "curl -LSs -o #{tar_path} #{params[:url]}"
+    notifies :run, "execute[Extract #{params[:name]}]", :immediately
+    not_if not_if
+  end
+
+  execute "Extract #{params[:name]}" do
+    action :nothing
+    command "tar xf #{tar_path} -C /home/#{$secret.user}/bin"
+  end
+end
