@@ -25,19 +25,19 @@ link "/home/#{$secret.user}/.config/Code/User/keybindings.json" do
 end
 
 %w(
-  coenraads.bracket-pair-colorizer
-  davidanson.vscode-markdownlint
+  CoenraadS.bracket-pair-colorizer
+  DavidAnson.vscode-markdownlint
   dbaeumer.vscode-eslint
   eg2.tslint
   esbenp.prettier-vscode
-  gerane.theme-dark-dracula
+  gerane.Theme-Dark-Dracula
   mechatroner.rainbow-csv
-  ms-vscode.go
+  ms-vscode.Go
   oderwat.indent-rainbow
   vscodevim.vim
 ).each do |ext|
   execute "Install VS Code extension #{ext}" do
-    command "code --install-extension #{ext}"
+    command "code --force --install-extension #{ext}"
     not_if "code --list-extensions | grep -q '#{ext}'"
   end
 end
