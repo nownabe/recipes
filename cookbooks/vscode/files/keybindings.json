@@ -9,5 +9,15 @@
     "key": "space w l",
     "command": "workbench.action.focusNextGroup",
     "when": "vim.mode == 'Normal' && activePanel != 'workbench.panel.terminal'"
+  },
+  {
+    "key": "Alt+Left",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "activePanel == 'workbench.panel.terminal'"
+  },
+  {
+    "key": "Alt+Right",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "activePanel == 'workbench.panel.terminal'"
   }
 ]
