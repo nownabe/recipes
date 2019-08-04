@@ -27,6 +27,7 @@ end
 %w(
   CoenraadS.bracket-pair-colorizer
   DavidAnson.vscode-markdownlint
+  Tyriar.terminal-tabs
   dbaeumer.vscode-eslint
   eg2.tslint
   esbenp.prettier-vscode
