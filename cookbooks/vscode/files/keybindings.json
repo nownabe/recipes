@@ -3,11 +3,11 @@
   {
     "key": "space w j",
     "command": "workbench.action.focusPreviousGroup",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && activePanel != 'workbench.panel.terminal'"
   },
   {
     "key": "space w l",
     "command": "workbench.action.focusNextGroup",
-    "when": "vim.mode == 'Normal'"
+    "when": "vim.mode == 'Normal' && activePanel != 'workbench.panel.terminal'"
   }
 ]
