@@ -34,6 +34,7 @@ end
   esbenp.prettier-vscode
   gerane.Theme-Dark-Dracula
   mechatroner.rainbow-csv
+  mermade.openapi-lint
   ms-vscode.Go
   oderwat.indent-rainbow
   vscodevim.vim
