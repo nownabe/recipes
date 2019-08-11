@@ -25,6 +25,7 @@ link "/home/#{$secret.user}/.config/Code/User/keybindings.json" do
 end
 
 %w(
+  42Crunch.vscode-openapi
   CoenraadS.bracket-pair-colorizer
   DavidAnson.vscode-markdownlint
   Tyriar.terminal-tabs
