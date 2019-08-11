@@ -37,6 +37,7 @@ end
   mermade.openapi-lint
   ms-vscode.Go
   oderwat.indent-rainbow
+  philosowaffle.openapi-designer
   vscodevim.vim
 ).each do |ext|
   execute "Install VS Code extension #{ext}" do
