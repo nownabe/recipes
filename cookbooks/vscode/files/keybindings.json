@@ -3,12 +3,12 @@
   {
     "key": "space w j",
     "command": "workbench.action.focusPreviousGroup",
-    "when": "vim.mode == 'Normal' && activePanel != 'workbench.panel.terminal'"
+    "when": "vim.mode == 'Normal'"
   },
   {
     "key": "space w l",
     "command": "workbench.action.focusNextGroup",
-    "when": "vim.mode == 'Normal' && activePanel != 'workbench.panel.terminal'"
+    "when": "vim.mode == 'Normal'"
   },
   {
     "key": "Alt+Left",
