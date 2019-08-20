@@ -4,6 +4,7 @@
   "blueman",           # Graphical bluetooth manager
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "cdrdao",            # records CDs in Disk-At-Once (DAO) mode
+  "chromium-chromedriver", # WebDriver driver for the Chromium Browser
   "cue2toc",           # converts CUE files to cdrdao's TOC format
   "deluge",            # bittorrent client written in Python/PyGTK
   "exfat-fuse",        # read and write exFAT driver for FUSE
