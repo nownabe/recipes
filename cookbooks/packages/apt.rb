@@ -1,6 +1,9 @@
 [
   "apache2-utils",     # Apache HTTP Server (utility programs for web servers)
   "asunder",           # graphical audio CD ripper and encoder
+  "avr-libc",          # Standard C library for Atmel AVR development
+  "avrdude",           # software for programming Atmel AVR microcontrollers
+  "binutils-avr",      # Binary utilities supporting Atmel's AVR targets
   "blueman",           # Graphical bluetooth manager
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "cdrdao",            # records CDs in Disk-At-Once (DAO) mode
@@ -12,6 +15,7 @@
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
   "ffmpeg",            # Tools for transcoding, streaming and playing of multimedia files
+  "gcc-avr",           # GNU C compiler (cross compiler for avr)
   "ghex",              # GNOME Hex editor for files
   "graphviz",          # rich set of graph drawing tools
   "jq",                # lightweight and flexible command-line JSON processor
