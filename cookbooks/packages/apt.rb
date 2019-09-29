@@ -11,6 +11,8 @@
   "chromium-chromedriver", # WebDriver driver for the Chromium Browser
   "cue2toc",           # converts CUE files to cdrdao's TOC format
   "deluge",            # bittorrent client written in Python/PyGTK
+  "dfu-programmer",    # device firmware update (DFU) based USB programmer for Atmel chips
+  "dfu-util",          # Device firmware update (DFU) USB programmer
   "exfat-fuse",        # read and write exFAT driver for FUSE
   "exfat-utils",       # utilities to create, check, label and dump exFAT filesystem
   "fcitx",             # Flexible Input Method Framework
