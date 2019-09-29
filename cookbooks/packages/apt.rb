@@ -3,6 +3,7 @@
   "asunder",           # graphical audio CD ripper and encoder
   "avr-libc",          # Standard C library for Atmel AVR development
   "avrdude",           # software for programming Atmel AVR microcontrollers
+  "binutils-arm-none-eabi", # GNU assembler, linker and binary utilities for ARM Cortex-A/R/M processors
   "binutils-avr",      # Binary utilities supporting Atmel's AVR targets
   "blueman",           # Graphical bluetooth manager
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
@@ -15,12 +16,14 @@
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
   "ffmpeg",            # Tools for transcoding, streaming and playing of multimedia files
+  "gcc-arm-none-eabi", # GCC cross compiler for ARM Cortex-A/R/M processors
   "gcc-avr",           # GNU C compiler (cross compiler for avr)
   "ghex",              # GNOME Hex editor for files
   "graphviz",          # rich set of graph drawing tools
   "jq",                # lightweight and flexible command-line JSON processor
   "lame",              # MP3 encoding library (frontend)
   "lhasa",             # lzh archive decompressor
+  "libnewlib-arm-none-eabi", # C library and math library compiled for bare metal using Cortex A/R/M
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
