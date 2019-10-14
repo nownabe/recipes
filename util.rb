@@ -51,7 +51,7 @@ define :install_tar,
     when :existence
       "[ -x #{bin_path} ]"
     when Hash
-      "#{bin_path} #{params[:check]} | grep -q '#{params[:check][:expected]}'"
+      "#{bin_path} #{params[:check][:args]} | grep -q '#{params[:check][:expected]}'"
     else
       raise "Unknown check method"
     end
