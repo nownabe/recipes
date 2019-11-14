@@ -39,6 +39,7 @@ end
   ms-vscode.Go
   oderwat.indent-rainbow
   philosowaffle.openapi-designer
+  steoates.autoimport
   vscodevim.vim
 ).each do |ext|
   execute "Install VS Code extension #{ext}" do
