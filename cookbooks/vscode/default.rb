@@ -29,6 +29,7 @@ end
   CoenraadS.bracket-pair-colorizer
   DavidAnson.vscode-markdownlint
   Tyriar.terminal-tabs
+  VisualStudioExptTeam.vscodeintellicode
   dbaeumer.vscode-eslint
   eg2.tslint
   esbenp.prettier-vscode
