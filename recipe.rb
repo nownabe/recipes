@@ -27,7 +27,7 @@ else
   include_recipe "./cookbooks/charles"
   include_recipe "./cookbooks/direnv"
   include_recipe "./cookbooks/discord"
-  # include_recipe "./cookbooks/docker"
+  include_recipe "./cookbooks/docker"
   include_recipe "./cookbooks/ergodox"
   include_recipe "./cookbooks/fzf"
   include_recipe "./cookbooks/gcloud"
