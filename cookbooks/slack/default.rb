@@ -9,7 +9,7 @@ execute "Download slack" do
 end
 
 
-%w(gconf2 gconf-service python libgnome-keyring0 gir1.2-gnomekeyring-1.0 libappindicator1).each do |pkg|
+%w(gconf2 gconf-service python libappindicator1).each do |pkg|
   package pkg do
     user "root"
   end
