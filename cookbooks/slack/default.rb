@@ -1,4 +1,4 @@
-slack_version = "3.2.1"
+slack_version = "4.2.0"
 
 package_path = File.join($tmpdir, "slack.deb")
 check_installation = "dpkg-query -f '${Status}' -W slack-desktop | grep -q 'install ok installed'"
