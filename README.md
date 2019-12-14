@@ -41,7 +41,7 @@ $ cp node.yaml.example node.yaml
 $ vi node.yaml
 ```
 
-# Configure
+# Run
 
 ```bash
 $ ${HOME}/bin/mitamae local recipe.rb -y node.yaml --dry-run
@@ -49,6 +49,8 @@ $ ${HOME}/bin/mitamae local recipe.rb -y node.yaml
 ```
 
 # Manual Setups
+
+* [Install Google Chrome](https://www.google.com/intl/ja_jp/chrome/)
 
 ## Add GPG key into GitHub
 
@@ -58,7 +60,7 @@ Print GPG public key.
 $ gpg --armor --export ${KEY_ID}
 ```
 
-Copy public key and then add it into [GitHub](https://github.com/settings/keys).
+Copy public key and then add it into [GitHub](https://github.com/settings/keys) and [GitLab.com](https://gitlab.com/profile/gpg_keys).
 
 ## Generate SSH key pair
 
