@@ -1,4 +1,6 @@
-package "git"
+package "git" do
+  user "root"
+end
 
 template "gitconfig" do
   path "/home/#{$secret.user}/.gitconfig"
