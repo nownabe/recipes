@@ -13,3 +13,5 @@ execute "Install Helm" do
   CMD
   not_if "#{install_dir}/helm version --short | grep -q v#{version}"
 end
+
+include_recipe "./repo"
