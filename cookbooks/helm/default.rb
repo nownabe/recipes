@@ -1,20 +1,15 @@
-version = "2.9.1"
+# https://helm.sh/docs/intro/install/
 
-url = "https://storage.googleapis.com/kubernetes-helm/helm-v#{version}-linux-amd64.tar.gz"
-archive = File.join($tmpdir, "helm.tar.gz")
+version = "3.0.2"
 
-execute "Download Helm" do
-  command "curl -sSL -o #{archive} #{url}"
-  notifies :run, "execute[Install Helm]", :immediately
-  not_if "[ -x ${HOME}/bin/helm ]"
-end
+url = "https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3"
+install_dir = File.join("/home", $secret.user, "bin")
 
 execute "Install Helm" do
-  action :nothing
   command <<-CMD
-    mkdir -p helm-installation
-    tar xf #{archive} -C helm-installation
-    mv helm-installation/linux-amd64/helm ~/bin/helm
+    export USE_SUDO=false
+    export HELM_INSTALL_DIR=#{install_dir}
+    curl #{url} | bash
   CMD
-  cwd $tmpdir
+  not_if "#{install_dir}/helm version --short | grep -q v#{version}"
 end
