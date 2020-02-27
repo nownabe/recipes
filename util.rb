@@ -1,3 +1,9 @@
+$user = ENV["USER"]
+puts "user: #{$user}"
+
+$home = ENV["HOME"]
+puts "home: #{$home}"
+
 $tmpdir = "#{Dir.tmpdir}/mitamae"
 Dir.mkdir($tmpdir) unless File.exist?($tmpdir)
 puts "tempdir: #{$tmpdir}"
