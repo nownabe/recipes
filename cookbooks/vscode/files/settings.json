@@ -7,16 +7,66 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
   ],
-  "go.useLanguageServer": true
+  "go.useLanguageServer": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "go.languageServerExperimentalFeatures": {
+    "format": true,
+    "autoComplete": true,
+    "rename": true,
+    "goToDefinition": true,
+    "hover": true,
+    "signatureHelp": true,
+    "goToTypeDefinition": true,
+    "goToImplementation": true,
+    "documentSymbols": true,
+    "workspaceSymbols": true,
+    "findReferences": true,
+    "diagnostics": true,
+    "documentLink": true
+  },
+  "gopls": {
+    "usePlaceholders": true,
+    "completeUnimported": true
+  },
+  "go.autocompleteUnimportedPackages": true,
+  "go.gopath": "/home/nownabe",
+  "go.lintOnSave": "workspace",
+  "go.vetOnSave": "workspace",
+  "go.buildOnSave": "workspace",
+  "go.installDependenciesWhenBuilding": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.minimap.enabled": false,
+  "extensions.ignoreRecommendations": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "[yaml]": {},
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path": "/home/nownabe/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  }
 }
