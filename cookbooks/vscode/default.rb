@@ -39,6 +39,7 @@ end
   mechatroner.rainbow-csv
   mermade.openapi-lint
   ms-vscode.Go
+  ninoseki.vscode-gem-lens
   oderwat.indent-rainbow
   philosowaffle.openapi-designer
   rebornix.ruby
