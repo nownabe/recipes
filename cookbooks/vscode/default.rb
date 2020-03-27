@@ -30,6 +30,7 @@ end
   DavidAnson.vscode-markdownlint
   Tyriar.terminal-tabs
   VisualStudioExptTeam.vscodeintellicode
+  bung87.rails
   dbaeumer.vscode-eslint
   eg2.tslint
   esbenp.prettier-vscode
