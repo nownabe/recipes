@@ -34,6 +34,7 @@ end
   eg2.tslint
   esbenp.prettier-vscode
   gerane.Theme-Dark-Dracula
+  kaiwood.endwise
   mechatroner.rainbow-csv
   mermade.openapi-lint
   ms-vscode.Go
