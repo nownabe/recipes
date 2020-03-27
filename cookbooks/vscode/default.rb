@@ -42,6 +42,7 @@ end
   philosowaffle.openapi-designer
   rebornix.Ruby
   steoates.autoimport
+  vortizhe.simple-ruby-erb
   vscodevim.vim
 ).each do |ext|
   execute "Install VS Code extension #{ext}" do
