@@ -40,7 +40,7 @@ end
   ms-vscode.Go
   oderwat.indent-rainbow
   philosowaffle.openapi-designer
-  rebornix.Ruby
+  rebornix.ruby
   steoates.autoimport
   vortizhe.simple-ruby-erb
   vscodevim.vim
