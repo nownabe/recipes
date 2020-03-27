@@ -1,0 +1,29 @@
+#!/bin/bash
+
+export WINDEBUG=fixme-all
+
+
+filename=
+
+cdrdao read-cd \
+  --datafile ${filename}.bin \
+  --read-raw \
+  --rspeed 64 \
+  --with-cddb \
+  --cddb-servers \
+    freedb.freedb.org:/~cddb/cddb.cgi,freedbtest.dyndns.org:/~cddb/cddb.cgi \
+  --swap \
+  ${filename}.toc
+
+toc2cue ${filename}.toc ${filename}.cue
+
+wine ${HOME}/opt/wine/qaac/qaac64.exe \
+  --tvbr 127 \
+  --quality 2 \
+  --rate 44100 \
+  --threading \
+  --raw \
+  --raw-format s16b \
+  --native-resampler=bats,127 \
+  --text-codepage 65001 \
+  ${filename}.cue

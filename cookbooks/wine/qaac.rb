@@ -45,4 +45,6 @@ execute "Install qaac" do
   not_if "WINEDEBUG=fixme-all wine #{app_path}/qaac64.exe --check 2>&1 | grep -q #{qaac_version}"
 end
 
-# TODO: Wrapper
+remote_file "/home/#{$secret.user}/bin/encode-cd" do
+  source ""
+end
