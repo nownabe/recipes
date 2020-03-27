@@ -43,6 +43,7 @@ end
   oderwat.indent-rainbow
   philosowaffle.openapi-designer
   rebornix.ruby
+  sianglim.slim
   steoates.autoimport
   vortizhe.simple-ruby-erb
   vscodevim.vim
