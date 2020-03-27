@@ -39,6 +39,7 @@ end
   ms-vscode.Go
   oderwat.indent-rainbow
   philosowaffle.openapi-designer
+  rebornix.Ruby
   steoates.autoimport
   vscodevim.vim
 ).each do |ext|
