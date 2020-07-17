@@ -67,6 +67,11 @@
   "files.trimTrailingWhitespace": true,
   "[yaml]": {},
   "vs-kubernetes": {
-    "vs-kubernetes.minikube-path": "/home/nownabe/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  }
+    "vs-kubernetes.minikube-path": "/home/nownabe/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.minikube-path.linux": "/home/nownabe/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.kubectl-path.linux": "/home/nownabe/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.draft-path.linux": "/home/nownabe/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "ruby.rubocop.useBundler": true,
+  "ruby.rubocop.executePath": "bundle exec rubocop"
 }
