@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 url = "https://go.microsoft.com/fwlink/?LinkID=760868"
 
 package_path = File.join($tmpdir, "visualstudiocode.rb")
@@ -24,7 +26,7 @@ link "/home/#{$secret.user}/.config/Code/User/keybindings.json" do
   to File.expand_path("../files/keybindings.json", __FILE__)
 end
 
-%w(
+%w[
   42Crunch.vscode-openapi
   CoenraadS.bracket-pair-colorizer
   DavidAnson.vscode-markdownlint
@@ -47,7 +49,7 @@ end
   steoates.autoimport
   vortizhe.simple-ruby-erb
   vscodevim.vim
-).each do |ext|
+].each do |ext|
   execute "Install VS Code extension #{ext}" do
     command "code --force --install-extension #{ext}"
     not_if "code --list-extensions | grep -q '#{ext}'"
