@@ -29,6 +29,7 @@ end
 %w[
   42Crunch.vscode-openapi
   CoenraadS.bracket-pair-colorizer
+  Dart-Code.flutter
   DavidAnson.vscode-markdownlint
   Tyriar.terminal-tabs
   VisualStudioExptTeam.vscodeintellicode
