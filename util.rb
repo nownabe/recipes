@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $user = ENV["USER"]
 puts "user: #{$user}"
 
@@ -19,9 +21,9 @@ $anyenv_cmd = proc do |cmd|
 end
 
 define :download_binary,
-  name: nil,
-  url: nil,
-  check_method: :existence do
+       name: nil,
+       url: nil,
+       check_method: :existence do
   bin_path = "/home/#{$secret.user}/bin/#{params[:name]}"
 
   not_if = case params[:check_method]
@@ -31,7 +33,7 @@ define :download_binary,
       "#{bin_path} #{params[:check_method][:args]} | grep -q '#{params[:check_method][:expected]}'"
     else
       raise "Unknown check method"
-  end
+    end
 
   execute "Download #{params[:name]}" do
     command "curl -LSs -o #{bin_path} #{params[:url]}"
@@ -46,10 +48,9 @@ define :download_binary,
 end
 
 define :install_tar,
-  name: nil,
-  url: nil,
-  check: :existence do
-
+       name: nil,
+       url: nil,
+       check: :existence do
   bin_path = "/home/#{$secret.user}/bin/#{params[:name]}"
   tar_path = File.join($tmpdir, "#{params[:name]}.tar.gz")
 

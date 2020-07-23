@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # ::Specinfra::HostInventory::KEYS.each do |key|
 #   puts "======== #{key} ========"
 #   p node.fetch_inventory_value(key)
