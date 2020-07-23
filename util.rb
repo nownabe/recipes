@@ -74,3 +74,24 @@ define :install_tar,
     command "tar xf #{tar_path} -C /home/#{$secret.user}/bin"
   end
 end
+
+define :install_from_repository,
+       name: nil,
+       repository: nil do
+  not_if_word = if params[:repository].start_with?("ppa")
+      params[:repository].split(":").last
+    else
+      params[:repository]
+    end
+
+  execute "Add apt repository #{params[:repository]}" do
+    user "root"
+    command "apt-add-repository -y #{params[:repository]}"
+    notifies :run, "execute[Update]", :immediately
+    not_if "apt-cache policy | grep -q #{not_if_word}"
+  end
+
+  package params[:name] do
+    user "root"
+  end
+end
