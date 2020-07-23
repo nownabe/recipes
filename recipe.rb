@@ -41,6 +41,7 @@ else
   include_recipe "./cookbooks/helm"
   include_recipe "./cookbooks/kubernetes"
   include_recipe "./cookbooks/neovim"
+  include_recipe "./cookbooks/obs"
   include_recipe "./cookbooks/protobuf"
   include_recipe "./cookbooks/python"
   include_recipe "./cookbooks/ruby"
