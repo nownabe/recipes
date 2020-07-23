@@ -1,18 +1,11 @@
-slack_version = "4.2.0"
+slack_version = "4.7.0"
 
-package_path = File.join($tmpdir, "slack.deb")
-check_installation = "dpkg-query -f '${Status}' -W slack-desktop | grep -q 'install ok installed'"
+package_path = File.join($tmpdir, "slack-#{slack_version}.deb")
+check_installation = "dpkg-query -W slack-desktop | grep -q '#{slack_version}'"
 
 execute "Download slack" do
   command "curl -L -o #{package_path} https://downloads.slack-edge.com/linux_releases/slack-desktop-#{slack_version}-amd64.deb"
   not_if "[ -e #{package_path} ] || #{check_installation}"
-end
-
-
-%w(gconf2 gconf-service python libappindicator1).each do |pkg|
-  package pkg do
-    user "root"
-  end
 end
 
 execute "Install slack" do
