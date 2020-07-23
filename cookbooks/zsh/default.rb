@@ -33,7 +33,6 @@ end
 end
 
 %w(
-  kubectl
 ).each do |name|
   remote_file "#{$home}/.zsh.d/completion/_#{name}" do
     source "files/zsh.d/completion/_#{name}"
