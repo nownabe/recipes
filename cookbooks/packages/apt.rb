@@ -22,6 +22,7 @@
   "gcc-avr",           # GNU C compiler (cross compiler for avr)
   "ghex",              # GNOME Hex editor for files
   "graphviz",          # rich set of graph drawing tools
+  "gthumb",            # image viewer and browser
   "jq",                # lightweight and flexible command-line JSON processor
   "lame",              # MP3 encoding library (frontend)
   "lhasa",             # lzh archive decompressor
