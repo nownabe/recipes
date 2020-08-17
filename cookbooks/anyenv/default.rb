@@ -3,7 +3,7 @@ envs = {
   java: { env: "jenv" },
   node: { env: "nodenv", version: "14.8.0" },
   python: { env: "pyenv", version: "3.8.5" },
-  ruby: { env: "rbenv", version: "2.5.1" },
+  ruby: { env: "rbenv", version: "2.7.1" },
 }
 
 git "/home/#{$secret.user}/.anyenv" do
