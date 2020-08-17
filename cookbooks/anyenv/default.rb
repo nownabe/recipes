@@ -14,6 +14,14 @@ git "/home/#{$secret.user}/.anyenv/plugins/anyenv-update" do
   repository "https://github.com/znz/anyenv-update.git"
 end
 
+execute "Initialize anyenv" do
+  command <<-CMD
+    PATH="${HOME}/.anyenv/bin:$PATH"
+    anyenv install --force-init
+  CMD
+  not_if "[ -d $HOME/.config/anyenv ]"
+end
+
 envs.each do |lang, env|
   execute "Install #{env[:env]}" do
     command $anyenv_cmd.call("anyenv install #{env[:env]}")
