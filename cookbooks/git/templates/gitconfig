@@ -23,8 +23,8 @@
   default = simple
 
 [user]
-  name  = <%= $secret.user %>
-  email = <%= $secret.email %>
+  name  = <%= $secret.github.user %>
+  email = <%= $secret.github.email %>
   signingkey = <%= node.gpg_key_id %>
 
 [url "ssh://git@github.com/"]

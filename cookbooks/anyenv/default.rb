@@ -1,9 +1,9 @@
 envs = {
-  go:   { env: "goenv", version: "1.11.1" },
+  go:   { env: "goenv", version: "1.15.0" },
   java: { env: "jenv" },
-  node: { env: "ndenv", version: "v10.11.0" },
-  python: { env: "pyenv", version: "3.7.1" },
-  ruby: { env: "rbenv", version: "2.5.1" },
+  node: { env: "nodenv", version: "14.8.0" },
+  python: { env: "pyenv", version: "3.8.5" },
+  ruby: { env: "rbenv", version: "2.7.1" },
 }
 
 git "/home/#{$secret.user}/.anyenv" do
@@ -12,6 +12,14 @@ end
 
 git "/home/#{$secret.user}/.anyenv/plugins/anyenv-update" do
   repository "https://github.com/znz/anyenv-update.git"
+end
+
+execute "Initialize anyenv" do
+  command <<-CMD
+    PATH="${HOME}/.anyenv/bin:$PATH"
+    anyenv install --force-init
+  CMD
+  not_if "[ -d $HOME/.config/anyenv ]"
 end
 
 envs.each do |lang, env|
