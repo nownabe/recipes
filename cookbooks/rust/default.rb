@@ -12,3 +12,14 @@ end
 remote_file "/home/#{$secret.user}/.zsh.d/rust.zsh" do
   source "files/rust.zsh"
 end
+
+%w(
+  rls
+  rust-analysis
+  rust-src
+).each do |pkg|
+  execute "Install rust component #{pkg}" do
+    command "$HOME/.cargo/bin/rustup component add #{pkg}"
+    not_if "$HOME/.cargo/bin/rustup component list | grep installed | grep -q #{pkg}"
+  end
+end
