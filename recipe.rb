@@ -6,6 +6,7 @@
 #   puts
 # end
 
+include_recipe "./ext/recipe_context"
 include_recipe "./util"
 include_recipe "./secret"
 

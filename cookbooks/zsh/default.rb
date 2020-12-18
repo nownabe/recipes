@@ -25,7 +25,6 @@ end
   bind
   docker
   history
-  prompt
 ).each do |name|
   remote_file "#{$home}/.zsh.d/#{name}.zsh" do
     source "files/zsh.d/#{name}.zsh"
@@ -38,3 +37,5 @@ end
     source "files/zsh.d/completion/_#{name}"
   end
 end
+
+include_recipe "./zplug"
