@@ -33,6 +33,7 @@
   "nkf",               # Network Kanji code conversion Filter
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
   "pinta",             # Simple drawing/painting program
+  "postgresql",
   "rpm",               # package manager for RPM
   "silversearcher-ag", # very fast grep-like program, alternative to ack-grep
   "tree",              # displays an indented directory tree, in color
