@@ -1,10 +1,10 @@
 module ::MItamae
-  class RecipeContext
+  class ResourceContext
     def home
       ENV["HOME"]
     end
 
-    def user
+    def username
       ENV["USER"]
     end
   end

@@ -7,6 +7,7 @@
 # end
 
 include_recipe "./ext/recipe_context"
+include_recipe "./ext/resource_context"
 include_recipe "./util"
 include_recipe "./secret"
 
