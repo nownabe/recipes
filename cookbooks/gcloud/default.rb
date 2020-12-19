@@ -30,5 +30,8 @@ end
 
 template "#{home}/.zsh.d/gcloud.zsh" do
   source "templates/gcloud.zsh"
-  variables python_path: python_path
+  variables(
+    home: home,
+    python_path: python_path,
+  )
 end

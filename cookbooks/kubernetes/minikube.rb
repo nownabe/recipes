@@ -8,8 +8,8 @@ end
 
 execute "Modify user for libvirt" do
   user "root"
-  command "usermod -a -G libvirt #{$secret.user}"
-  not_if "id #{$secret.user} | grep -q libvirt"
+  command "usermod -a -G libvirt #{username}"
+  not_if "id #{username} | grep -q libvirt"
 end
 
 minikube_url = "https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64"
