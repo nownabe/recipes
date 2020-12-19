@@ -2,10 +2,11 @@
   l = log --graph --oneline --all --decorate
   co = checkout
   pp = pull --prune
+  s = switch
 
 [commit]
   gpgsign = true
-  template = /home/<%= $secret.user %>/.commit_template
+  template = <%= @home %>/.commit_template
 
 [core]
   editor = nvim
@@ -14,7 +15,7 @@
   compactionHeuristic = true
 
 [ghq]
-  root = /home/<%= $secret.user %>/src
+  root = <%= @home %>/src
 
 [gpg]
   program = gpg
@@ -23,15 +24,9 @@
   default = simple
 
 [user]
-  name  = <%= $secret.github.user %>
-  email = <%= $secret.github.email %>
+  name  = <%= @user_name %>
+  email = <%= @user_email %>
   signingkey = <%= node.gpg_key_id %>
-
-[url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
-
-[url "ssh://git@gitlab.com/"]
-  insteadOf = https://gitlab.com/
 
 [git-pr-release]
   token = <%= $secret.github.token %>
