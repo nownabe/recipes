@@ -6,14 +6,14 @@ url = "https://github.com/junegunn/fzf-bin/releases/download/#{version}/fzf-#{ve
 execute "Download fzf" do
   command "curl -sSL -o #{archive} #{url}"
   notifies :run, "execute[Unarchive fzf]", :immediately
-  not_if "[ -x /home/#{$secret.user}/bin/fzf ]"
+  not_if "[ -x #{home}/bin/fzf ]"
 end
 
 execute "Unarchive fzf" do
   action :nothing
-  command "tar xf #{archive} -C /home/#{$secret.user}/bin"
+  command "tar xf #{archive} -C #{home}/bin"
 end
 
-remote_file "/home/#{$secret.user}/.zsh.d/fzf.zsh" do
+remote_file "#{home}/.zsh.d/fzf.zsh" do
   source "files/fzf.zsh"
 end

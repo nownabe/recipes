@@ -1,3 +1,3 @@
-template "/home/#{$secret.user}/.zsh.d/github.zsh" do
+template "#{home}/.zsh.d/github.zsh" do
   source "templates/github.zsh"
 end

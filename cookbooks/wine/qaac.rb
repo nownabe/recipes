@@ -13,7 +13,7 @@ qaac_tmp = File.join(tmpdir, "qaac")
 qaac_url = "https://sites.google.com/site/qaacpage/cabinet/qaac_#{qaac_version}.zip"
 qaac_zip = File.join(qaac_tmp, "qaac.zip")
 
-app_path = "/home/#{$secret.user}/opt/wine/qaac"
+app_path = "#{home}/opt/wine/qaac"
 directory app_path
 
 # TODO: Refactor

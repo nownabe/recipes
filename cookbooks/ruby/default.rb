@@ -1,6 +1,6 @@
-directory "/home/#{$secret.user}/.gem"
+directory "#{home}/.gem"
 
-template "/home/#{$secret.user}/.gem/credentials" do
+template "#{home}/.gem/credentials" do
   mode "0600"
   source "templates/gem/credentials"
 end

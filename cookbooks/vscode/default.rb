@@ -16,13 +16,13 @@ execute "Install Visual Studio Code" do
   not_if check_installation
 end
 
-directory "/home/#{$secret.user}/.config/Code/User"
+directory "#{home}/.config/Code/User"
 
-link "/home/#{$secret.user}/.config/Code/User/settings.json" do
+link "#{home}/.config/Code/User/settings.json" do
   to File.expand_path("../files/settings.json", __FILE__)
 end
 
-link "/home/#{$secret.user}/.config/Code/User/keybindings.json" do
+link "#{home}/.config/Code/User/keybindings.json" do
   to File.expand_path("../files/keybindings.json", __FILE__)
 end
 

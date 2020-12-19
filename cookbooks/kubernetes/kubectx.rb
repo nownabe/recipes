@@ -1,22 +1,22 @@
 repo = "github.com/ahmetb/kubectx"
-srcpath = "/home/#{$secret.user}/src/#{repo}"
+srcpath = "#{home}/src/#{repo}"
 
 git srcpath do
   repository "https://#{repo}"
 end
 
-link "/home/#{$secret.user}/bin/kubectx" do
+link "#{home}/bin/kubectx" do
   to "#{srcpath}/kubectx"
 end
 
-link "/home/#{$secret.user}/bin/kubens" do
+link "#{home}/bin/kubens" do
   to "#{srcpath}/kubens"
 end
 
-link "/home/#{$secret.user}/.zsh.d/completion/_kubectx" do
+link "#{home}/.zsh.d/completion/_kubectx" do
   to "#{srcpath}/completion/kubens.zsh"
 end
 
-link "/home/#{$secret.user}/.zsh.d/completion/_kubens" do
+link "#{home}/.zsh.d/completion/_kubens" do
   to "#{srcpath}/completion/kubens.zsh"
 end

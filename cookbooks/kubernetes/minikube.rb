@@ -13,7 +13,7 @@ execute "Modify user for libvirt" do
 end
 
 minikube_url = "https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64"
-minikube_path = "/home/#{$secret.user}/bin/minikube"
+minikube_path = "#{home}/bin/minikube"
 
 execute "Install minikube" do
   command <<-CMD
@@ -24,7 +24,7 @@ execute "Install minikube" do
 end
 
 kvm2_url = "https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-kvm2"
-kvm2_path = "/home/#{$secret.user}/bin/docker-machine-driver-kvm2"
+kvm2_path = "#{home}/bin/docker-machine-driver-kvm2"
 
 execute "Install KVM2 driver" do
   command <<-CMD

@@ -9,7 +9,7 @@ execute "Install rustup" do
   not_if "[ -e $HOME/.cargo ]"
 end
 
-remote_file "/home/#{$secret.user}/.zsh.d/rust.zsh" do
+remote_file "#{home}/.zsh.d/rust.zsh" do
   source "files/rust.zsh"
 end
 

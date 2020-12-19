@@ -15,7 +15,7 @@ execute "Make docker-compose executable" do
   command "chmod +x ${HOME}/bin/docker-compose"
 end
 
-completion_path = "/home/#{$secret.user}/.zsh.d/completion/_docker-compose"
+completion_path = "#{home}/.zsh.d/completion/_docker-compose"
 completion_url = "https://raw.githubusercontent.com/docker/compose/#{version}/contrib/completion/zsh/_docker-compose"
 
 execute "Download docker-compose completion" do

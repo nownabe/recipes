@@ -18,7 +18,7 @@ define :download_binary,
        name: nil,
        url: nil,
        check_method: :existence do
-  bin_path = "/home/#{$secret.user}/bin/#{params[:name]}"
+  bin_path = "#{home}/bin/#{params[:name]}"
 
   not_if = case params[:check_method]
     when :existence
@@ -45,7 +45,7 @@ define :install_tar,
        name: nil,
        url: nil,
        check: :existence do
-  bin_path = "/home/#{$secret.user}/bin/#{params[:name]}"
+  bin_path = "#{home}/bin/#{params[:name]}"
   tar_path = File.join($tmpdir, "#{params[:name]}.tar.gz")
 
   not_if = case params[:check]
@@ -65,7 +65,7 @@ define :install_tar,
 
   execute "Extract #{params[:name]}" do
     action :nothing
-    command "tar xf #{tar_path} -C /home/#{$secret.user}/bin"
+    command "tar xf #{tar_path} -C #{home}/bin"
   end
 end
 

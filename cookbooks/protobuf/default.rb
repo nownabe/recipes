@@ -4,7 +4,7 @@ grpc_web_version = "1.0.3"
 # --------
 
 
-dest = "/home/#{$secret.user}/src/github.com/google/protobuf"
+dest = "#{home}/src/github.com/google/protobuf"
 
 git dest do
   repository "https://github.com/google/protobuf"
@@ -22,7 +22,7 @@ execute "Install protoc" do
 end
 
 grpc_web_url = "https://github.com/grpc/grpc-web/releases/download/#{grpc_web_version}/protoc-gen-grpc-web-#{grpc_web_version}-linux-x86_64"
-grpc_web_path = "/home/#{$secret.user}/bin/protoc-gen-grpc-web"
+grpc_web_path = "#{home}/bin/protoc-gen-grpc-web"
 
 execute "Install grpc-web" do
   command <<-CMD
