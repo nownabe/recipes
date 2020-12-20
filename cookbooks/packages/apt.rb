@@ -3,6 +3,7 @@
   "asunder",           # graphical audio CD ripper and encoder
   "avr-libc",          # Standard C library for Atmel AVR development
   "avrdude",           # software for programming Atmel AVR microcontrollers
+  "bat",               # cat(1) clone with syntax highlighting and git integration
   "binutils-arm-none-eabi", # GNU assembler, linker and binary utilities for ARM Cortex-A/R/M processors
   "binutils-avr",      # Binary utilities supporting Atmel's AVR targets
   "blueman",           # Graphical bluetooth manager
