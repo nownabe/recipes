@@ -2,7 +2,7 @@ export FZF_DEFAULT_OPTS='--height 30% --reverse --select-1 --exit-0 --multi'
 
 function fzf-ghq() {
   local target_dir
-  target_dir=$(ghq list | fzf --preview "cat $(ghq root)/{}/README.md")
+  target_dir=$(ghq list | fzf --preview "batcat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.md")
   if [[ -n "$target_dir" ]]; then
     cd $(ghq root)/$target_dir
     zle accept-line
