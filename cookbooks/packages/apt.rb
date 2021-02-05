@@ -37,6 +37,7 @@
   "pinta",             # Simple drawing/painting program
   "postgresql",
   "rpm",               # package manager for RPM
+  "shellcheck",        # lint tool for shell scripts
   "silversearcher-ag", # very fast grep-like program, alternative to ack-grep
   "tree",              # displays an indented directory tree, in color
   "xdg-utils",         # desktop integration utilities from freedesktop.org
