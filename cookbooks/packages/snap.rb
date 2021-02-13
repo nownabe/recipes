@@ -10,6 +10,7 @@ end
 
 %w(
   heroku
+  flutter
 ).each do |pkg|
   execute "Install #{pkg} snap" do
     user "root"
