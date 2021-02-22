@@ -23,4 +23,6 @@ alias open='xdg-open'
 
 alias k='kubectl'
 
+alias bat='batcat'
+
 alias pbcopy='xsel --clipboard --input'

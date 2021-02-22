@@ -1,7 +1,7 @@
 version = "0.3.1"
 
 url = "https://github.com/neovim/neovim/releases/download/v#{version}/nvim.appimage"
-bin_path = "/home/#{$secret.user}/bin/nvim"
+bin_path = "#{home}/bin/nvim"
 
 execute "Download neovim" do
   command "curl -sSL -o #{bin_path} #{url}"

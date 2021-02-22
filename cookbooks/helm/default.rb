@@ -3,7 +3,7 @@
 version = "3.2.4"
 
 url = "https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3"
-install_dir = File.join("/home", $secret.user, "bin")
+install_dir = File.join("/home", username, "bin")
 
 execute "Install Helm" do
   command <<-CMD

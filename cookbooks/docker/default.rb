@@ -40,9 +40,9 @@ end
 
 execute "Make users belong to docker group" do
   user "root"
-  command "gpasswd -a #{$secret.user} docker"
+  command "gpasswd -a #{username} docker"
   notifies :restart, "service[docker]"
-  not_if "id #{$secret.user} | grep -q docker"
+  not_if "id #{username} | grep -q docker"
 end
 
 include_recipe "./compose"

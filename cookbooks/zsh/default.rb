@@ -11,6 +11,7 @@ end
 
 directory "#{home}/.zsh.d"
 directory "#{home}/.zsh.d/completion"
+directory "#{home}/.cache/shell"
 
 remote_file "#{home}/.zshrc" do
   source "files/zshrc"

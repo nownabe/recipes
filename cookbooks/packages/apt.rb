@@ -3,12 +3,14 @@
   "asunder",           # graphical audio CD ripper and encoder
   "avr-libc",          # Standard C library for Atmel AVR development
   "avrdude",           # software for programming Atmel AVR microcontrollers
+  "bat",               # cat(1) clone with syntax highlighting and git integration
   "binutils-arm-none-eabi", # GNU assembler, linker and binary utilities for ARM Cortex-A/R/M processors
   "binutils-avr",      # Binary utilities supporting Atmel's AVR targets
   "blueman",           # Graphical bluetooth manager
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "cdrdao",            # records CDs in Disk-At-Once (DAO) mode
   "chromium-chromedriver", # WebDriver driver for the Chromium Browser
+  "convmv",            # filename encoding conversion tool
   "cue2toc",           # converts CUE files to cdrdao's TOC format
   "deluge",            # bittorrent client written in Python/PyGTK
   "dfu-programmer",    # device firmware update (DFU) based USB programmer for Atmel chips
@@ -35,6 +37,7 @@
   "pinta",             # Simple drawing/painting program
   "postgresql",
   "rpm",               # package manager for RPM
+  "shellcheck",        # lint tool for shell scripts
   "silversearcher-ag", # very fast grep-like program, alternative to ack-grep
   "tree",              # displays an indented directory tree, in color
   "xdg-utils",         # desktop integration utilities from freedesktop.org
