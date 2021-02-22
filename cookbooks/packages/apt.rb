@@ -43,6 +43,7 @@
   "xdg-utils",         # desktop integration utilities from freedesktop.org
   "webp",              # Lossy compression of digital photographic images.
   "whois",             # intelligent WHOIS client
+  "xsel",              # command-line tool to access X clipboard and selection buffers
 ].each do |pkg|
   package pkg do
     user "root"
