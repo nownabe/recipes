@@ -1,0 +1,64 @@
+# Go
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+  let g:go_fmt_command = "goimports"
+'''
+
+# Haskell
+
+[[plugins]]
+repo = 'neovimhaskell/haskell-vim'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'eagletmt/ghcmod-vim'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'alx741/vim-stylishask'
+on_ft = 'haskell'
+hook_add = '''
+  let g:stylishask_config_file = '~/.stylish-haskell.yaml'
+'''
+
+# JSON
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+hook_add = '''
+  let g:vim_json_syntax_conceal = 0
+'''
+
+[[plugins]]
+repo = 'google/vim-jsonnet'
+
+# PureScript
+
+[[plugins]]
+repo = 'purescript-contrib/purescript-vim'
+on_ft = 'purescript'
+
+# Terraform
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+hook_add = '''
+  let g:terraform_fmt_on_save = 1
+  let g:terraform_align = 1
+  let g:terraform_fold_section = 1
+'''
+
+# TypeScript
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+# Vue
+
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = 'vue'

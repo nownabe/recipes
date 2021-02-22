@@ -13,3 +13,30 @@ execute "Make neovim executable" do
   action :nothing
   command "chmod +x #{bin_path}"
 end
+
+directory "#{home}/.config/nvim"
+
+%w(
+  base
+  dein
+  denite
+  init
+  keymap
+  options
+).each do |name|
+  link "#{home}/.config/nvim/#{name}.vim" do
+    to File.expand_path("../files/#{name}.vim", __FILE__)
+  end
+end
+
+directory "#{home}/.config/nvim/dein"
+
+%w(
+  base
+  lang
+  lazy
+).each do |name|
+  link "#{home}/.config/nvim/dein/#{name}.toml" do
+    to File.expand_path("../files/dein/#{name}.toml", __FILE__)
+  end
+end
