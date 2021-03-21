@@ -87,5 +87,15 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.exclude": {
+    "**/.next": true,
+    "**/build": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.next/**": true,
+    "**/build/**": true
   }
 }
