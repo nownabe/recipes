@@ -1,4 +1,4 @@
-version = "1.21.2"
+version = "1.28.5"
 
 os = run_command("uname -s").stdout.chomp
 arch = run_command("uname -m").stdout.chomp
