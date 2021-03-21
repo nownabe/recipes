@@ -7,7 +7,7 @@ url = "https://github.com/docker/compose/releases/download/#{version}/docker-com
 execute "Download docker-compose" do
   command "curl -sSL -o ${HOME}/bin/docker-compose #{url}"
   notifies :run, "execute[Make docker-compose executable]", :immediately
-  not_if "[ -x ${HOME}/bin/docker-compose ]"
+  not_if "[ -x ${HOME}/bin/docker-compose ] && docker-compose version | grep -q 'docker-compose version #{version}'"
 end
 
 execute "Make docker-compose executable" do
