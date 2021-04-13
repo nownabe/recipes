@@ -23,7 +23,13 @@ augroup MyColor
   autocmd VimEnter * nested colorscheme default
 augroup END
 
-augroup DeleteSpace
+" augroup DeleteSpace
+"   autocmd!
+"   autocmd BufWritePre * :%s/\s\+$//ge
+" augroup END
+
+augroup HighlightTrailingSpaces
   autocmd!
-  autocmd BufWritePre * :%s/\s\+$//ge
+  autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+  autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
 augroup END
