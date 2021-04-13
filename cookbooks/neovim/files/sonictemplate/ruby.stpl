@@ -1,0 +1,27 @@
+\(\S\+\)\.atcoder$
+	#
+	
+	if ENV["ATCODER_TEST"] == "true"
+	  require "./base"
+	else
+	  Base = Class.new { def self.add_sample(*args); end }
+	end
+	
+	class {{_expr_:toupper($1)}} < Base
+	  add_sample(
+	    input: [{{__cursor__}}],
+	    expect: [],
+	  )
+	
+	  attr_reader
+	
+	  def initialize
+	  end
+	
+	  def run
+	  end
+	
+	  def solve
+	end
+	
+	ABC039A.new.run

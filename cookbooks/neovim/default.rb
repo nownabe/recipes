@@ -40,3 +40,14 @@ directory "#{home}/.config/nvim/dein"
     to File.expand_path("../files/dein/#{name}.toml", __FILE__)
   end
 end
+
+directory "#{home}/.config/nvim/sonictemplate"
+
+%w(
+  ruby
+).each do |name|
+  directory "#{home}/.config/nvim/sonictemplate/#{name}"
+  link "#{home}/.config/nvim/sonictemplate/#{name}/pattern.stpl" do
+    to File.expand_path("../files/sonictemplate/#{name}.stpl", __FILE__)
+  end
+end
