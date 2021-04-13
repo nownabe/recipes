@@ -1,4 +1,4 @@
-version = "0.12.29"
+version = "0.14.10"
 
 archive = File.join($tmpdir, "terraform.zip")
 
