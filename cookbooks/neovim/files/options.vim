@@ -23,6 +23,9 @@ set tabstop=2     " Width of TAB
 set shiftwidth=2  " 自動インデントの幅
 set softtabstop=2 " 動く幅
 
+" 特殊文字を可視化する
+set list
+
 " For Japanese IME
 set ttimeout
 set ttimeoutlen=50
