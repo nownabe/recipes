@@ -7,9 +7,9 @@
 	  Base = Class.new { def self.add_sample(*args); end }
 	end
 	
-	class {{_expr_:toupper($1)}} < Base
+	class {{$1}} < Base
 	  add_sample(
-	    input: [{{__cursor__}}],
+	    input: [{{_cursor_}}],
 	    expect: [],
 	  )
 	
@@ -22,6 +22,7 @@
 	  end
 	
 	  def solve
+	  end
 	end
 	
-	ABC039A.new.run
+	{{$1}}.new.run
