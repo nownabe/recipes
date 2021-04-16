@@ -1,18 +1,7 @@
 \(\S\+\)\.atcoder$
-	#
+	# {{_cursor_}}
 	
-	if ENV["ATCODER_TEST"] == "true"
-	  require "./base"
-	else
-	  Base = Class.new { def self.add_sample(*args); end }
-	end
-	
-	class {{$1}} < Base
-	  add_sample(
-	    input: [{{_cursor_}}],
-	    expect: [],
-	  )
-	
+	class {{$1}}
 	  attr_reader
 	
 	  def initialize
@@ -26,3 +15,7 @@
 	end
 	
 	{{$1}}.new.run
+	
+	__END__
+	=input
+	=expect
