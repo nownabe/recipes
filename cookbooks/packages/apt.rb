@@ -20,6 +20,7 @@
   "fcitx",             # Flexible Input Method Framework
   "fcitx-mozc",        # Mozc engine for fcitx - Client of the Mozc input method
   "ffmpeg",            # Tools for transcoding, streaming and playing of multimedia files
+  "flameshot",         # Powerful yet simple-to-use screenshot software
   "gcc-arm-none-eabi", # GCC cross compiler for ARM Cortex-A/R/M processors
   "gcc-avr",           # GNU C compiler (cross compiler for avr)
   "ghex",              # GNOME Hex editor for files
