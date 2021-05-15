@@ -1,0 +1,21 @@
+\(\S\+\)\.atcoder$
+	# {{_cursor_}}
+	
+	class {{$1}}
+	  attr_reader
+	
+	  def initialize
+	  end
+	
+	  def run
+	  end
+	
+	  def solve
+	  end
+	end
+	
+	{{$1}}.new.run
+	
+	__END__
+	=input
+	=expect
