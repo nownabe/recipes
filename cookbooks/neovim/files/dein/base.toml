@@ -28,7 +28,7 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'w0rp/ale'
 hook_add = '''
   let g:ale_fixers = {
-  \   'go': ['goimports', 'go mod', 'go vet', 'gotype', 'gosimple', 'golangserver', 'golangci-lint'],
+  \   'go': ['goimports', 'go mod', 'go vet', 'gotype', 'gosimple', 'golangserver'],
   \   'ruby': ['rufo'],
   \ }
   let g:ale_fix_on_save = 1
