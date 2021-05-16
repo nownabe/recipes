@@ -1,0 +1,121 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - "**/Capfile"
+    - "**/vendor/**/*"
+    - "**/tmp/*"
+    - "**/config/deploy.rb"
+    - "**/config/deploy/*"
+  DisplayCopNames: true
+
+Documentation:
+  Enabled: false
+
+######## Lint ########
+
+# 条件文での代入を許可する
+Lint/AssignmentInCondition:
+  Enabled: false
+
+# 空のrescue節を許可する
+Lint/HandleExceptions:
+  Enabled: false
+
+# _から始まる変数名を許可する
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
+
+# 使わないブロック引数を許可する
+Lint/UnusedBlockArgument:
+  Enabled: false
+
+# 使わないメソッド引数を許可する
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+######## Metrics ########
+
+# 要調整
+Metrics/AbcSize:
+  Max: 20
+
+# 要調整
+Metrics/CyclomaticComplexity:
+  Max: 6
+
+# 1行の文字数
+Metrics/LineLength:
+  Max: 100
+
+# メソッドの最大行数を20行に
+Metrics/MethodLength:
+  Max: 20
+
+# 要調整
+Metrics/PerceivedComplexity:
+  Max: 7
+
+######## Style ########
+
+# set_/get_ で始まるメソッド名を許可する
+Style/AccessorMethodName:
+  Enabled: false
+
+# 日本語のコメントを許可する
+Style/AsciiComments:
+  Enabled: false
+
+# ドキュメントのないclass/moduleを許可する
+Style/Documentation:
+  Enabled: false
+
+# !!value のイディオムを許可する
+Style/DoubleNegation:
+  Enabled: false
+
+# 文字列フォーマットをString#%を強制する
+Style/FormatString:
+  EnforcedStyle: percent
+
+# 条件文の中身が4行以上ならガード節を強制する
+Style/GuardClause:
+  MinBodyLength: 4
+
+# 後置if/unlessを強制しない
+Style/IfUnlessModifier:
+  Enabled: false
+
+# 複数行ブロック(do/end)を複数使用するメソッドチェインを許可する
+Style/MultilineBlockChain:
+  Enabled: false
+
+# 7桁以上の数字のみ_を強制する
+Style/NumericLiterals:
+  MinDigits: 7
+
+# has_hoge? のメソッド名を許可する
+Style/PredicateName:
+  NamePrefixBlacklist:
+    - "is_"
+    - "have_"
+
+# 例外発生をraiseに統一する
+Style/SignalException:
+  EnforcedStyle: only_raise
+
+# 1行injectのブロック引数に自由な名前を許可する
+# defaultでは inject { |a, e| }
+Style/SingleLineBlockParams:
+  Enabled: false
+
+# アライメント用の連続スペースを許可する
+Style/SpaceAroundOperators:
+  AllowForAlignment: true
+
+# 文字列はダブルクォートに統一する
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# ArrayリテラルとHashリテラルの末尾の空カンマを許可する
+Style/TrailingCommaInLiteral:
+  Enabled: false
