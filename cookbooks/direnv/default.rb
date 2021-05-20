@@ -1,6 +1,6 @@
 version = "v2.16.0"
 
-bin_path = "/home/#{$secret.user}/bin/direnv"
+bin_path = "#{$home}/bin/direnv"
 
 execute "Download direnv" do
   command "curl -sSL -o #{bin_path} https://github.com/direnv/direnv/releases/download/#{version}/direnv.linux-amd64"
@@ -13,6 +13,6 @@ execute "Make direnv executable" do
   command "chmod +x #{bin_path}"
 end
 
-remote_file "/home/#{$secret.user}/.zsh.d/direnv.zsh" do
+remote_file "#{$home}/.zsh.d/direnv.zsh" do
   source "files/direnv.zsh"
 end
