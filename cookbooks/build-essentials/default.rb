@@ -23,6 +23,7 @@
   libtool
   p7zip
   p7zip-full
+  python-pip
   tcl-dev
   tk-dev
   zlib1g-dev
