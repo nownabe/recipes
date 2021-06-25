@@ -44,6 +44,7 @@ end
 directory "#{home}/.config/nvim/sonictemplate"
 
 %w(
+  cpp
   ruby
 ).each do |name|
   directory "#{home}/.config/nvim/sonictemplate/#{name}"
