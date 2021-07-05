@@ -9,3 +9,21 @@ atcoder$
 	
 	  return 0;
 	}
+
+leet$
+	// {{_cursor_}}
+	
+	
+	using namespace std;
+	
+	class Solution {
+	 public:
+	  
+	};
+	
+	#include <gtest/gtest.h>
+	
+	TEST(SolutionTest, Examples) {
+	  Solution sol = Solution();
+	
+	}
