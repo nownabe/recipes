@@ -97,5 +97,10 @@
   "files.watcherExclude": {
     "**/.next/**": true,
     "**/build/**": true
-  }
+  },
+  "cpplint.cpplintPath": "/home/nownabe/.local/bin/cpplint",
+  "cpplint.lineLength": 100,
+  "cpplint.filters": [
+    "-build/c++11"
+  ]
 }
