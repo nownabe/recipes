@@ -34,6 +34,7 @@
   "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
   "nkf",               # Network Kanji code conversion Filter
+  "okteta",            # hexadecimal editor for binary files
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
   "pinta",             # Simple drawing/painting program
   "postgresql",
