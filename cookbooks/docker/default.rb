@@ -46,4 +46,4 @@ execute "Make users belong to docker group" do
 end
 
 include_recipe "./compose"
-include_recipe "./nvidia"
+# include_recipe "./nvidia"
