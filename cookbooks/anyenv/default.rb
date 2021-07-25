@@ -1,9 +1,9 @@
 envs = {
-  go: { env: "goenv", version: "1.15.0" },
+  go: { env: "goenv", version: "1.16.6" },
   java: { env: "jenv" },
-  node: { env: "nodenv", version: "14.8.0" },
-  python: { env: "pyenv", version: "3.8.5" },
-  ruby: { env: "rbenv", version: "2.7.1" },
+  node: { env: "nodenv", version: "16.5.0" },
+  python: { env: "pyenv", version: "3.9.6" },
+  ruby: { env: "rbenv", version: "3.0.2" },
 }
 
 git "#{home}/.anyenv" do
