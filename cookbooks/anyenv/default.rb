@@ -29,6 +29,11 @@ envs.each do |lang, env|
   end
 
   if env[:version]
+    execute "Update #{env[:env]}" do
+      command $anyenv_cmd.call("anyenv update #{env[:env]}")
+      not_if $anyenv_cmd.call("#{env[:env]} versions | grep -q #{env[:version]}")
+    end
+
     execute "Install #{lang} #{env[:version]}" do
       command $anyenv_cmd.call("#{env[:env]} install #{env[:version]} && #{env[:env]} global #{env[:version]}")
       not_if $anyenv_cmd.call("#{env[:env]} versions | grep -q #{env[:version]}")
