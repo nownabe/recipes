@@ -10,7 +10,6 @@
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "cdrdao",            # records CDs in Disk-At-Once (DAO) mode
   "chromium-chromedriver", # WebDriver driver for the Chromium Browser
-  "clang-7",            # C, C++ and Objective-C compiler
   "convmv",            # filename encoding conversion tool
   "cue2toc",           # converts CUE files to cdrdao's TOC format
   "deluge",            # bittorrent client written in Python/PyGTK
@@ -31,8 +30,6 @@
   "lame",              # MP3 encoding library (frontend)
   "lhasa",             # lzh archive decompressor
   "libnewlib-arm-none-eabi", # C library and math library compiled for bare metal using Cortex A/R/M
-  "lld-7",              # LLVM-based linker
-  "llvm-7-dev",         # Modular compiler and toolchain technologies, libraries and headers
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
