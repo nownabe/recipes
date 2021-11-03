@@ -1,23 +1,18 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "space w j",
-    "command": "workbench.action.focusPreviousGroup",
-    "when": "vim.mode == 'Normal'"
-  },
-  {
-    "key": "space w l",
-    "command": "workbench.action.focusNextGroup",
-    "when": "vim.mode == 'Normal'"
-  },
-  {
-    "key": "Alt+Left",
+    "key": "alt+left",
     "command": "workbench.action.terminal.focusPrevious",
-    "when": "activePanel == 'workbench.panel.terminal'"
+    "when": "terminalFocus"
   },
   {
-    "key": "Alt+Right",
+    "key": "alt+right",
     "command": "workbench.action.terminal.focusNext",
-    "when": "activePanel == 'workbench.panel.terminal'"
+    "when": "terminalFocus"
+  },
+  {
+    "key": "f2",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
   }
 ]
