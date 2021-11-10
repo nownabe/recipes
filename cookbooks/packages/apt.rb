@@ -10,6 +10,7 @@
   "byobu",             # text window manager, shell multiplexer, integrated DevOps environment
   "cdrdao",            # records CDs in Disk-At-Once (DAO) mode
   "chromium-chromedriver", # WebDriver driver for the Chromium Browser
+  "clang-format",      # Tool to format C/C++/Obj-C code
   "convmv",            # filename encoding conversion tool
   "cppcheck",          # tool for static C/C++ code analysis (CLI)
   "cue2toc",           # converts CUE files to cdrdao's TOC format
