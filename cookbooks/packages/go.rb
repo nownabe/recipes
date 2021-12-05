@@ -1,3 +1,5 @@
+raise "Remove this file. Use $HOME/.default-golang-pkgs. https://github.com/kennyp/asdf-golang#default-go-get-packages"
+
 #  github.com/go-swagger/go-swagger/cmd/swagger
 #  github.com/kubernetes-sigs/kustomize
 %w(

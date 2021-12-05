@@ -24,8 +24,7 @@ end
 
 %w(
   00_base
-  01_golang
-  02_anyenv
+  02_golang
   alias
   bind
   docker

@@ -1,3 +1,5 @@
+raise "Remove this file. Use $HOME/.default-npm-packages. https://github.com/kennyp/asdf-golang#default-go-get-packages"
+
 %w(
   bower
   grpc-tools

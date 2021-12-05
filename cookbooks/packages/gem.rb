@@ -1,3 +1,5 @@
+raise "Remove this file. Use $HOME/.default-gems. https://github.com/asdf-vm/asdf-ruby#default-gems"
+
 %w(
   grpc-tools
   travis

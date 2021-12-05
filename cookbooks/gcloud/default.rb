@@ -1,3 +1,5 @@
+raise "Remove dependency on anyenv. Use system Python 3"
+
 python_version = "2.7.15"
 python_path = "#{home}/.anyenv/envs/pyenv/versions/#{python_version}/bin/python"
 gcloud_archive = File.join($tmpdir, "gcloud.tar.gz")
