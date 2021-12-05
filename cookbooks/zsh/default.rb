@@ -13,9 +13,13 @@ directory "#{home}/.zsh.d"
 directory "#{home}/.zsh.d/completion"
 directory "#{home}/.cache/shell"
 
-remote_file "#{home}/.zshrc" do
-  source "files/zshrc"
+link "#{home}/.zshrc" do
+  to File.expand_path("../files/zshrc", __FILE__)
   not_if "[ -e #{home}/.zshrc ]"
+end
+
+git "#{home}/.zplug" do
+  repository "https://github.com/zplug/zplug"
 end
 
 %w(
@@ -26,17 +30,9 @@ end
   bind
   docker
   history
+  zplug
 ).each do |name|
-  remote_file "#{home}/.zsh.d/#{name}.zsh" do
-    source "files/zsh.d/#{name}.zsh"
+  link "#{home}/.zsh.d/#{name}.zsh" do
+    to File.expand_path("../files/zsh.d/#{name}.zsh", __FILE__)
   end
 end
-
-%w(
-).each do |name|
-  remote_file "#{home}/.zsh.d/completion/_#{name}" do
-    source "files/zsh.d/completion/_#{name}"
-  end
-end
-
-include_recipe "./zplug"
