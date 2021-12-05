@@ -26,3 +26,5 @@ alias k='kubectl'
 alias bat='batcat'
 
 alias pbcopy='xsel --clipboard --input'
+
+alias bazel='bazelisk'
