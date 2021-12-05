@@ -24,6 +24,7 @@ end
 
 %w(
   00_base
+  01_asdf
   02_golang
   alias
   bind
