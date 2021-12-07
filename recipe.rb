@@ -25,6 +25,7 @@ else
   include_recipe "./cookbooks/git"
   include_recipe "./cookbooks/zsh"
 
+  include_recipe "./cookbooks/asdf"
   # include_recipe "./cookbooks/asciinema"
   include_recipe "./cookbooks/charles"
   include_recipe "./cookbooks/dart"
