@@ -1,9 +1,9 @@
 source $HOME/.zplug/init.zsh
 
 zplug 'zplug/zplug', hook-build: 'zplug --self-manage'
-zplug 'nownabe/zshrc'
+zplug 'nownabe/zshrc', at:main
 zplug 'mafredri/zsh-async'
-zplug 'sindresorhus/pure', use:pure.zsh, as:theme
+zplug 'sindresorhus/pure', use:pure.zsh, as:theme, at:main
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 
 [[ -z "${CODESPACES}" ]] && zplug 'asdf-vm/asdf'
