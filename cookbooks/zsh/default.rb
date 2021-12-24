@@ -23,14 +23,8 @@ git "#{home}/.zplug" do
 end
 
 %w(
-  00_base
-  01_asdf
   02_golang
-  alias
-  bind
   docker
-  history
-  zplug
 ).each do |name|
   link "#{home}/.zsh.d/#{name}.zsh" do
     to File.expand_path("../files/zsh.d/#{name}.zsh", __FILE__)
