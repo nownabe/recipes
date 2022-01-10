@@ -9,7 +9,7 @@ language message C
 filetype off
 filetype plugin indent off
 
-let g:python3_host_prog = expand($PYENV_ROOT . '/shims/python3')
+let g:python3_host_prog = expand($HOME . '/.asdf/shims/python3')
 
 let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
