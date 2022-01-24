@@ -36,6 +36,9 @@ hook_add = '''
 [[plugins]]
 repo = 'google/vim-jsonnet'
 
+[[plugins]]
+repo = 'GutenYe/json5.vim'
+
 # PureScript
 
 [[plugins]]
