@@ -52,3 +52,7 @@ directory "#{home}/.config/nvim/sonictemplate"
     to File.expand_path("../files/sonictemplate/#{name}.stpl", __FILE__)
   end
 end
+
+link "#{home}/.config/nvim/ftdetect" do
+  to File.expand_path("../files/ftdetect", __FILE__)
+end
