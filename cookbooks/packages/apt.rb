@@ -33,7 +33,9 @@
   "lhasa",             # lzh archive decompressor
   "libgd-dev",         # GD Graphics Library (development version)
   "libnewlib-arm-none-eabi", # C library and math library compiled for bare metal using Cortex A/R/M
+  "libonig-dev",       # regular expressions library — development files
   "libxml2-dev",       # Development files for the GNOME XML library
+  "libzip-dev",        # library for reading, creating, and modifying zip archives (development)
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
   "nasm",              # General-purpose x86 assembler
   "nfs-common",        # NFS support files common to client and server
