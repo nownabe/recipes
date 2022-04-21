@@ -40,6 +40,7 @@
   "openjdk-11-jdk",    # OpenJDK Development Kit (JDK)
   "pinta",             # Simple drawing/painting program
   "postgresql",
+  "re2c",              # tool for generating fast C-based recognizers
   "rpm",               # package manager for RPM
   "shellcheck",        # lint tool for shell scripts
   "silversearcher-ag", # very fast grep-like program, alternative to ack-grep
