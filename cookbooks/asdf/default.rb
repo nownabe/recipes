@@ -1,4 +1,5 @@
 %w(
+  default-golang-pkgs
   default-python-packages
 ).each do |name|
   link "#{home}/.#{name}" do

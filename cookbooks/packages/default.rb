@@ -1,7 +1,6 @@
 include_recipe "./apt"
 include_recipe "./downloads"
 include_recipe "./github"
-include_recipe "./go"
 include_recipe "./npm"
 include_recipe "./gem"
 include_recipe "./snap"
