@@ -31,6 +31,7 @@
   "jq",                # lightweight and flexible command-line JSON processor
   "lame",              # MP3 encoding library (frontend)
   "lhasa",             # lzh archive decompressor
+  "libgd-dev",         # GD Graphics Library (development version)
   "libnewlib-arm-none-eabi", # C library and math library compiled for bare metal using Cortex A/R/M
   "libxml2-dev",       # Development files for the GNOME XML library
   "mysql-client",      # MySQL database client (metapackage depending on the latest version)
