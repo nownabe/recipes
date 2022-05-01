@@ -20,7 +20,7 @@ if ENV.key?("ONLY")
     include_recipe "./cookbooks/#{cookbook}"
   end
 else
-  include_recipe "./cookbooks/build-essentials"
+  include_recipe "./cookbooks/apt"
   include_recipe "./cookbooks/sysctl"
   include_recipe "./cookbooks/git"
   include_recipe "./cookbooks/zsh"
