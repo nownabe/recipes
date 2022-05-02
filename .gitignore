@@ -1,3 +1,4 @@
 node.yaml
 secret.rb
 .envrc
+variables.rb

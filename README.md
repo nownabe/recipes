@@ -24,11 +24,11 @@ gpg --full-generate-key
 gpg --list-keys
 ```
 
-## Configure .envrc
+## Configure variables
 
 ```bash
-cp .envrc.example .envrc
-gedit .envrc
+cp variables.rb.tpl variables.rb
+gedit variables.rb
 ```
 
 ## Run
