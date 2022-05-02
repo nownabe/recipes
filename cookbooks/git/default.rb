@@ -9,10 +9,17 @@ template "gitconfig" do
     home: home,
     user_name: $env.git.user,
     user_email: $env.git.email,
-    gpg_key_id: $env.git.gpg_key_id,
     github_token: $env.github.token,
-    additional_github_users: $env.git.additional_github_users,
+    configs: $env.git.configs.keys,
   )
+end
+
+$env.git.configs.each do |root, config|
+  path = File.join(File.expand_path(root), ".gitconfig")
+  template path do
+    source "templates/sub-config.erb"
+    variables(config: config)
+  end
 end
 
 remote_file "#{home}/.commit_template" do

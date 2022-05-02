@@ -1,0 +1,6 @@
+<%- @config.each do |group, values| -%>
+[<%= group %>]
+  <%- values.each do |key, value| -%>
+  <%= key %> = <%= value %>
+  <%- end %>
+<%- end -%>
