@@ -1,0 +1,26 @@
+$env = Hashie::Mash.new(
+  git: {
+    user: "nownabe",
+    email: "",
+    configs: {
+      "~/src/github.com/": {
+        commit: {
+          gpgsign: "true",
+        },
+        user: {
+          name: "nownabe",
+          email: "nownabe@users.noreply.github.com",
+          signingkey: "",
+        },
+      },
+  },
+  github: {
+    token: "",
+  },
+  gitlab: {
+    token: "",
+  },
+  ruby: {
+    rubygems_api_key: "",
+  },
+)

@@ -27,7 +27,7 @@ gpg --list-keys
 ## Configure variables
 
 ```bash
-cp variables.rb.tpl variables.rb
+cp variables.rb.example variables.rb
 gedit variables.rb
 ```
 
