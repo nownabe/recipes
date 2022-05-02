@@ -36,3 +36,10 @@
 
 [credential "https://source.developers.google.com"]
   helper = gcloud.sh
+
+<%- @additional_github_users.each do |user| -%>
+
+[includeIf "gitdir:~/Work/<%= user %>/"]
+  path = ~/Work/<%= user %>/.gitconfig
+
+<%- end -%>

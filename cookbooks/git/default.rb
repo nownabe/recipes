@@ -11,6 +11,7 @@ template "gitconfig" do
     user_email: $env.git.email,
     gpg_key_id: $env.git.gpg_key_id,
     github_token: $env.github.token,
+    additional_github_users: $env.git.additional_github_users,
   )
 end
 

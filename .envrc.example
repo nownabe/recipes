@@ -1,6 +1,7 @@
 export GIT_USER=""
 export GIT_EMAIL=""
 export GIT_GPG_KEY_ID=""
+export GIT_ADDITIONAL_GITHUB_USERS=""
 
 export GITHUB_PAT=""
 
