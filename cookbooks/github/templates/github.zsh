@@ -1,1 +1,1 @@
-export GITHUB_TOKEN="<%= $secret.github.token %>"
+export GITHUB_TOKEN="<%= $env.github.token %>"

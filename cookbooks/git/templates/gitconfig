@@ -26,10 +26,10 @@
 [user]
   name  = <%= @user_name %>
   email = <%= @user_name %>@users.noreply.github.com
-  signingkey = <%= node.gpg_key_id %>
+  signingkey = <%= @gpg_key_id %>
 
 [git-pr-release]
-  token = <%= $secret.github.token %>
+  token = <%= @github_token %>
 
 [rebase]
   autostash = true

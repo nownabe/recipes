@@ -8,7 +8,7 @@
 
 include_recipe "./ext"
 include_recipe "./util"
-include_recipe "./secret"
+include_recipe "./variables"
 
 execute "Update" do
   user "root"
@@ -20,7 +20,9 @@ if ENV.key?("ONLY")
     include_recipe "./cookbooks/#{cookbook}"
   end
 else
+  # Essential recipes
   include_recipe "./cookbooks/apt"
+
   include_recipe "./cookbooks/sysctl"
   include_recipe "./cookbooks/git"
   include_recipe "./cookbooks/zsh"

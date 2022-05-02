@@ -7,8 +7,10 @@ template "gitconfig" do
   source "templates/gitconfig"
   variables(
     home: home,
-    user_name: $secret.git.user,
-    user_email: $secret.git.email,
+    user_name: $env.git.user,
+    user_email: $env.git.email,
+    gpg_key_id: $env.git.gpg_key_id,
+    github_token: $env.github.token,
   )
 end
 

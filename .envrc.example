@@ -1,1 +1,9 @@
-export ENCRYPTION_KEY=""
+export GIT_USER=""
+export GIT_EMAIL=""
+export GIT_GPG_KEY_ID=""
+
+export GITHUB_PAT=""
+
+export GITLAB_TOKEN=""
+
+export RUBY_RUBYGEMS_API_KEY=""

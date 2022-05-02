@@ -3,7 +3,7 @@ recipes
 
 [Mitamae](https://github.com/itamae-kitchen/mitamae) recipes to configure nownabe's Linux PC.
 
-# Preparation
+# First run
 
 ## Install mitamae and cryptography
 
@@ -14,38 +14,28 @@ $ sudo apt install curl
 $ curl -sSL https://raw.githubusercontent.com/nownabe/recipes/master/init.sh | bash
 ```
 
-## Decrypt secrets
-
-Decrypt `secret.rb`.
-
-```
-$ ${HOME}/bin/cryptography dec -in secret.rb.enc -out secret.rb -key ${ENCRYPTION_KEY}
-```
-
-## Configure node.yaml
-
-Create GPG key.
+## Create GPG key
 
 ```bash
 # Generate key
-$ gpg --full-generate-key
+gpg --full-generate-key
 
 # Get key ID
-$ gpg --list-keys
+gpg --list-keys
 ```
 
-Then create `node.yaml`.
+## Configure .envrc
 
 ```bash
-$ cp node.yaml.example node.yaml
-$ vi node.yaml
+cp .envrc.example .envrc
+gedit .envrc
 ```
 
-# Run
+## Run
 
 ```bash
-$ ${HOME}/bin/mitamae local recipe.rb -y node.yaml --dry-run
-$ ${HOME}/bin/mitamae local recipe.rb -y node.yaml
+$ ${HOME}/bin/mitamae local recipe.rb --dry-run
+$ ${HOME}/bin/mitamae local recipe.rb
 ```
 
 # Manual Setups
