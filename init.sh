@@ -2,7 +2,7 @@
 
 set -eux
 
-mitamae_version=v1.7.5
+mitamae_version=v1.12.10
 
 [[ -d ${HOME}/bin ]] || mkdir ${HOME}/bin
 
