@@ -54,6 +54,7 @@ vim.api.nvim_command('highlight CursorLine gui=underline guifg=NONE guibg=NONE')
 
 require('config/mini')
 require('config/telescope')
+require('config/nightfox')
 
 
 -- Keymaps ====================================================

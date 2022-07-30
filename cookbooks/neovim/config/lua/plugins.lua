@@ -13,6 +13,8 @@ local function init()
 
   packer.use({'echasnovski/mini.nvim', branch = 'stable'})
 
+  packer.use('EdenEast/nightfox.nvim')
+
   packer.use('nvim-telescope/telescope.nvim')
   packer.use('nvim-telescope/telescope-file-browser.nvim')
 

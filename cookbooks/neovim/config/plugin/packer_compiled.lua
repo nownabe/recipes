@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/nownabe/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/nownabe/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/nownabe/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
