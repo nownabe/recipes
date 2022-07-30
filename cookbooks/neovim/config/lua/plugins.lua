@@ -7,7 +7,14 @@ local function init()
   end
   packer.reset()
 
+  packer.use('nvim-lua/plenary.nvim')
+
   packer.use('lewis6991/impatient.nvim')
+
+  packer.use({'echasnovski/mini.nvim', branch = 'stable'})
+
+  packer.use('nvim-telescope/telescope.nvim')
+  packer.use('nvim-telescope/telescope-file-browser.nvim')
 
   packer.use('neovim/nvim-lspconfig')
   packer.use('williamboman/nvim-lsp-installer')
@@ -19,15 +26,6 @@ local function init()
       require('trouble').setup({})
     end,
   })
-
-  packer.use({'echasnovski/mini.nvim', branch = 'stable'})
-
-  packer.use({
-    'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
-    requires = 'nvim-lua/plenary.nvim',
-  })
-  packer.use({'nvim-telescope/telescope-file-browser.nvim'})
 end
 
 return setmetatable({}, {
