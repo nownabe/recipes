@@ -31,6 +31,9 @@ local function init()
       require('trouble').setup({})
     end,
   })
+
+  -- Misc
+  packer.use('terrortylor/nvim-comment')
 end
 
 return setmetatable({}, {
