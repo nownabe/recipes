@@ -32,7 +32,10 @@ local function init()
     end,
   })
 
-  -- Misc
+  -- Lua module collection
+  packer.use('echasnovski/mini.nvim')
+
+  -- Comment
   packer.use('terrortylor/nvim-comment')
 end
 
