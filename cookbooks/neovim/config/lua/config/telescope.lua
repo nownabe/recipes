@@ -10,6 +10,7 @@ telescope.setup({
       i = {
         ['<C-j>'] = actions.move_selection_next,
         ['<C-k>'] = actions.move_selection_previous,
+        ['<C-h>'] = actions.select_horizontal,
         ['<C-n>'] = fb_actions.create_from_prompt,
       }
     },
