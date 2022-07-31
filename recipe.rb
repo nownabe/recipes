@@ -23,7 +23,7 @@ else
   # Essential recipes
   include_recipe "./cookbooks/apt"
 
-  include_recipe "./cookbooks/sysctl"
+  # include_recipe "./cookbooks/sysctl"
   include_recipe "./cookbooks/git"
   include_recipe "./cookbooks/zsh"
 
@@ -36,7 +36,7 @@ else
   include_recipe "./cookbooks/docker"
   # include_recipe "./cookbooks/ergodox"
   include_recipe "./cookbooks/fzf"
-  include_recipe "./cookbooks/gcloud"
+  # include_recipe "./cookbooks/gcloud"
   include_recipe "./cookbooks/github"
   include_recipe "./cookbooks/gitlab"
   include_recipe "./cookbooks/go"
@@ -56,5 +56,5 @@ else
   include_recipe "./cookbooks/vscode"
   # include_recipe "./cookbooks/wine"
 
-  include_recipe "./cookbooks/packages"
+  # include_recipe "./cookbooks/packages"
 end

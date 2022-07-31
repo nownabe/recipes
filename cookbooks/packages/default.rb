@@ -1,5 +1,5 @@
 include_recipe "./downloads"
 include_recipe "./github"
-include_recipe "./npm"
-include_recipe "./gem"
+# include_recipe "./npm"
+# include_recipe "./gem"
 include_recipe "./snap"
