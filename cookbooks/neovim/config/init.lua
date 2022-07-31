@@ -52,7 +52,6 @@ vim.api.nvim_command('highlight CursorLine gui=underline guifg=NONE guibg=NONE')
 
 -- Plugin Config ==============================================
 
-require('config/mini')
 require('config/telescope')
 require('config/nightfox')
 
