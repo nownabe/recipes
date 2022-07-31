@@ -7,17 +7,20 @@ local function init()
   end
   packer.reset()
 
+  -- Common dependencies
   packer.use('nvim-lua/plenary.nvim')
 
+  -- Speed up loading Lua modules
   packer.use('lewis6991/impatient.nvim')
 
-  packer.use({'echasnovski/mini.nvim', branch = 'stable'})
-
+  -- Colorscheme
   packer.use('EdenEast/nightfox.nvim')
 
+  -- Fuzzy finder
   packer.use('nvim-telescope/telescope.nvim')
   packer.use('nvim-telescope/telescope-file-browser.nvim')
 
+  -- Language server
   packer.use('neovim/nvim-lspconfig')
   packer.use('williamboman/nvim-lsp-installer')
 
