@@ -31,7 +31,8 @@ local function init()
 
   -- Language server
   packer.use('neovim/nvim-lspconfig')
-  packer.use('williamboman/nvim-lsp-installer')
+  packer.use('williamboman/mason.nvim')
+  packer.use('williamboman/mason-lspconfig.nvim')
 
   packer.use({
     'folke/trouble.nvim',

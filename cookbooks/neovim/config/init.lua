@@ -52,6 +52,7 @@ vim.api.nvim_command('highlight CursorLine gui=underline guifg=NONE guibg=NONE')
 
 -- Plugin Config ==============================================
 
+require('config/nvim-lspconfig')
 require('config/mini')
 require('config/nightfox')
 require('config/nvim-comment')
@@ -75,6 +76,17 @@ vim.keymap.set({'n'}, '<Leader>fg', '<cmd>Telescope live_grep<cr>')
 vim.keymap.set({'n'}, '<Leader>fh', '<cmd>Telescope help_tags<cr>')
 vim.keymap.set({'n'}, '<Leader>fc', '<cmd>Telescope commands<cr>')
 vim.keymap.set({'n'}, '<Leader>fk', '<cmd>Telescope keymaps<cr>')
+
+-- Telescope LSP
+vim.keymap.set({'n'}, '<Leader>lr', '<cmd>Telescope lsp_references<cr>')
+vim.keymap.set({'n'}, '<Leader>lci', '<cmd>Telescope lsp_incoming_calls<cr>')
+vim.keymap.set({'n'}, '<Leader>lco', '<cmd>Telescope lsp_outgoing_calls<cr>')
+vim.keymap.set({'n'}, '<Leader>lg', '<cmd>Telescope diagnostics<cr>')
+vim.keymap.set({'n'}, '<Leader>li', '<cmd>Telescope lsp_implementations<cr>')
+vim.keymap.set({'n'}, '<Leader>ld', '<cmd>Telescope lsp_definitions<cr>')
+vim.keymap.set({'n'}, '<Leader>lt', '<cmd>Telescope lsp_type_definitions<cr>')
+
+-- Telescope file_browser
 vim.keymap.set({'n'}, '<Leader>fn', '<cmd>Telescope file_browser<cr>')
 
 
