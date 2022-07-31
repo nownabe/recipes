@@ -9,6 +9,7 @@ local function init()
 
   -- Common dependencies
   packer.use('nvim-lua/plenary.nvim')
+  packer.use('kyazdani42/nvim-web-devicons')
 
   -- Speed up loading Lua modules
   packer.use('lewis6991/impatient.nvim')
@@ -19,6 +20,14 @@ local function init()
   -- Fuzzy finder
   packer.use('nvim-telescope/telescope.nvim')
   packer.use('nvim-telescope/telescope-file-browser.nvim')
+
+  -- Git
+  packer.use({
+    'lewis6991/gitsigns.nvim',
+    tag = 'release',
+    config = function() require('gitsigns').setup() end,
+  })
+
 
   -- Language server
   packer.use('neovim/nvim-lspconfig')
@@ -37,6 +46,12 @@ local function init()
 
   -- Comment
   packer.use('terrortylor/nvim-comment')
+
+  -- Status line
+  packer.use({
+    'feline-nvim/feline.nvim',
+    config = function() require('feline').setup() end,
+  })
 end
 
 return setmetatable({}, {
