@@ -49,10 +49,7 @@ local function init()
   packer.use('terrortylor/nvim-comment')
 
   -- Status line
-  packer.use({
-    'feline-nvim/feline.nvim',
-    config = function() require('feline').setup() end,
-  })
+  packer.use('feline-nvim/feline.nvim')
 end
 
 return setmetatable({}, {
