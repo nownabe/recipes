@@ -14,7 +14,7 @@ local function init()
   packer.use('lewis6991/impatient.nvim')
 
   -- Colorscheme
-  packer.use('EdenEast/nightfox.nvim')
+  packer.use({'EdenEast/nightfox.nvim', opt = true})
 
   -- Fuzzy finder
   packer.use('nvim-telescope/telescope.nvim')
