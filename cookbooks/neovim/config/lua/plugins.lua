@@ -34,6 +34,15 @@ local function init()
   packer.use('williamboman/mason.nvim')
   packer.use('williamboman/mason-lspconfig.nvim')
 
+  -- Completion
+  packer.use('hrsh7th/cmp-nvim-lsp')
+  packer.use('hrsh7th/cmp-buffer')
+  packer.use('hrsh7th/cmp-path')
+  packer.use('hrsh7th/cmp-cmdline')
+  packer.use('hrsh7th/nvim-cmp')
+  packer.use('dcampos/nvim-snippy')
+  packer.use('dcampos/cmp-snippy')
+
   packer.use({
     'folke/trouble.nvim',
     requires = 'kyazdani42/nvim-web-devicons',
