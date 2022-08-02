@@ -8,16 +8,18 @@ cmp.setup({
     end,
   },
   mapping = {
-    ['<C-k>'] = cmp.mapping.select_prev_item(),
-    ['<C-j>'] = cmp.mapping.select_next_item(),
-    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-u>'] = cmp.mapping.scroll_docs(4),
-    ['<C-o>'] = cmp.mapping.complete(),
-    ['<C-e>'] = cmp.mapping({
+    ['<C-k>']  = cmp.mapping.select_prev_item(),
+    ['<C-j>']  = cmp.mapping.select_next_item(),
+    ['<Up>']   = cmp.mapping.select_prev_item(),
+    ['<Down>'] = cmp.mapping.select_next_item(),
+    ['<C-d>']  = cmp.mapping.scroll_docs(-4),
+    ['<C-u>']  = cmp.mapping.scroll_docs(4),
+    ['<C-o>']  = cmp.mapping.complete(),
+    ['<C-e>']  = cmp.mapping({
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     }),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<CR>']   = cmp.mapping.confirm({ select = true }),
   },
   sources = cmp.config.sources(
     {
@@ -29,22 +31,27 @@ cmp.setup({
       { name = 'buffer' },
     }
   ),
+  preselect = cmp.PreselectMode.None,
 })
 
 cmp.setup.cmdline('/', {
   mapping = {
-    ['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
-    ['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<C-k>']  = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
+    ['<C-j>']  = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<Up>']   = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
+    ['<Down>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<CR>']   = cmp.mapping.confirm({ select = true }),
   },
   sources = { { name = 'buffer' } },
 })
 
 cmp.setup.cmdline(':', {
   mapping = {
-    ['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
-    ['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<C-k>']  = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
+    ['<C-j>']  = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<Up>']   = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
+    ['<Down>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<CR>']   = cmp.mapping.confirm({ select = true }),
   },
   sources = {
     { name = 'path' },
