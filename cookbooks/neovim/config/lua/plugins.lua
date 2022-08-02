@@ -36,6 +36,7 @@ local function init()
 
   -- Completion
   packer.use('hrsh7th/cmp-nvim-lsp')
+  packer.use('hrsh7th/cmp-nvim-lsp-signature-help')
   packer.use('hrsh7th/cmp-buffer')
   packer.use('hrsh7th/cmp-path')
   packer.use('hrsh7th/cmp-cmdline')
