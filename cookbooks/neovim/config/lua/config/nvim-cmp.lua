@@ -31,7 +31,6 @@ cmp.setup({
       { name = 'buffer' },
     }
   ),
-  preselect = cmp.PreselectMode.None,
 })
 
 cmp.setup.cmdline('/', {
