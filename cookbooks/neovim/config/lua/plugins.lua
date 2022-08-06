@@ -36,6 +36,12 @@ local function init()
 
   packer.use({'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu'})
 
+  -- Open diagnostics window at the bottom
+  packer.use({
+    'folke/trouble.nvim',
+    config = function() require('trouble').setup() end,
+  })
+
   -- Completion
   packer.use('hrsh7th/cmp-nvim-lsp')
   packer.use('hrsh7th/cmp-nvim-lsp-signature-help')
