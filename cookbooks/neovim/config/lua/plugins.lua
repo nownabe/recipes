@@ -10,6 +10,7 @@ local function init()
   -- Common dependencies
   packer.use('nvim-lua/plenary.nvim')
   packer.use('kyazdani42/nvim-web-devicons')
+  packer.use('ray-x/guihua.lua')
 
   -- Speed up loading Lua modules
   packer.use('lewis6991/impatient.nvim')
@@ -71,8 +72,14 @@ local function init()
   -- Status line
   packer.use('feline-nvim/feline.nvim')
 
-  -- Flutter
-  packer.use('akinsho/flutter-tools.nvim')
+  -- Language & Frameworks
+  packer.use({'akinsho/flutter-tools.nvim', ft = {'dart'}})
+  packer.use({'ray-x/go.nvim', ft = {'go'}})
+  packer.use({
+    'jose-elias-alvarez/typescript.nvim',
+    ft = {'typescript', 'typescriptreact'},
+  })
+
 end
 
 return setmetatable({}, {
