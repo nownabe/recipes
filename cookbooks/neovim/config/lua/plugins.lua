@@ -34,6 +34,10 @@ local function init()
   packer.use('williamboman/mason.nvim')
   packer.use('williamboman/mason-lspconfig.nvim')
 
+  -- Show function signature
+  packer.use('ray-x/lsp_signature.nvim')
+
+  -- Show analyzer status
   packer.use({
     'j-hui/fidget.nvim',
     config = function() require('fidget').setup() end,
@@ -50,7 +54,6 @@ local function init()
 
   -- Completion
   packer.use('hrsh7th/cmp-nvim-lsp')
-  packer.use('hrsh7th/cmp-nvim-lsp-signature-help')
   packer.use('hrsh7th/cmp-buffer')
   packer.use('hrsh7th/cmp-path')
   packer.use('hrsh7th/cmp-cmdline')

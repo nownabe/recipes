@@ -36,3 +36,5 @@ require('mason-lspconfig').setup_handlers({
     lspconfig[server_name].setup(default_opts)
   end,
 })
+
+require('lsp_signature').setup()
