@@ -34,6 +34,8 @@ local function init()
   packer.use('williamboman/mason.nvim')
   packer.use('williamboman/mason-lspconfig.nvim')
 
+  packer.use({'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu'})
+
   -- Completion
   packer.use('hrsh7th/cmp-nvim-lsp')
   packer.use('hrsh7th/cmp-nvim-lsp-signature-help')

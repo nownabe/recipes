@@ -96,7 +96,7 @@ vim.keymap.set({'n'}, '<Leader>fn', '<cmd>Telescope file_browser<cr>')
 vim.keymap.set({'n'}, '<Leader>lh', vim.lsp.buf.hover)
 vim.keymap.set({'n'}, '<Leader>lf', vim.lsp.buf.formatting)
 vim.keymap.set({'n'}, '<Leader>rn', vim.lsp.buf.rename)
-vim.keymap.set({'n'}, '<Leader>ca', vim.lsp.buf.code_action)
+vim.keymap.set({'n'}, '<Leader>ca', '<cmd>CodeActionMenu<cr>')
 
 
 -- Commands ===================================================
