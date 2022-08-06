@@ -31,6 +31,7 @@ cmp.setup({
       { name = 'buffer' },
     }
   ),
+  preselect = cmp.PreselectMode.Item,
 })
 
 cmp.setup.cmdline('/', {
@@ -39,6 +40,7 @@ cmp.setup.cmdline('/', {
     ['<C-j>']  = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
     ['<Up>']   = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
     ['<Down>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<Tab>']  = cmp.mapping(cmp.mapping.confirm({ select = true }), { 'i', 'c' }),
     ['<CR>']   = cmp.mapping.confirm({ select = true }),
   },
   sources = { { name = 'buffer' } },
@@ -50,6 +52,7 @@ cmp.setup.cmdline(':', {
     ['<C-j>']  = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
     ['<Up>']   = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
     ['<Down>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
+    ['<Tab>']  = cmp.mapping(cmp.mapping.confirm({ select = true }), { 'i', 'c' }),
     ['<CR>']   = cmp.mapping.confirm({ select = true }),
   },
   sources = {
