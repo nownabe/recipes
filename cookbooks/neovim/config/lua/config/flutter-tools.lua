@@ -11,11 +11,11 @@ require('flutter-tools').setup({
     prefix = '# ',
     enabled = true,
   },
-  -- lsp = {
-  --   color = {
-  --     enabled = true,
-  --     virtual_text = true,
-  --     virtual_text_str = '■',
-  --   },
-  -- },
+  lsp = {
+    color = {
+      enabled = true,
+      virtual_text = true,
+      virtual_text_str = '■',
+    },
+  },
 })

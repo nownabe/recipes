@@ -40,5 +40,3 @@ require('mason-lspconfig').setup_handlers({
     lspconfig[server_name].setup(default_opts)
   end,
 })
-
-lspconfig.dartls.setup(default_opts)
