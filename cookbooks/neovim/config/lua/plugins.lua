@@ -60,6 +60,9 @@ local function init()
 
   -- Status line
   packer.use('feline-nvim/feline.nvim')
+
+  -- Flutter
+  packer.use('akinsho/flutter-tools.nvim')
 end
 
 return setmetatable({}, {
