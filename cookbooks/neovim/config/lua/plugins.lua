@@ -43,6 +43,7 @@ local function init()
   packer.use('hrsh7th/nvim-cmp')
   packer.use('dcampos/nvim-snippy')
   packer.use('dcampos/cmp-snippy')
+  packer.use('onsails/lspkind.nvim')
 
   packer.use({
     'folke/trouble.nvim',

@@ -1,4 +1,5 @@
 local cmp = require('cmp')
+local lspkind = require('lspkind')
 
 cmp.setup({
   completion = { completeopt = 'menu,menuone,noinsert' },
@@ -32,6 +33,11 @@ cmp.setup({
     }
   ),
   preselect = cmp.PreselectMode.Item,
+  formatting = {
+    format = lspkind.cmp_format({
+      mode = 'symbol',
+    }),
+  }
 })
 
 cmp.setup.cmdline('/', {
