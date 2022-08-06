@@ -34,6 +34,12 @@ local function init()
   packer.use('williamboman/mason.nvim')
   packer.use('williamboman/mason-lspconfig.nvim')
 
+  packer.use({
+    'j-hui/fidget.nvim',
+    config = function() require('fidget').setup() end,
+  })
+
+  -- Open code actions as popup window
   packer.use({'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu'})
 
   -- Open diagnostics window at the bottom
@@ -52,13 +58,6 @@ local function init()
   packer.use('dcampos/nvim-snippy')
   packer.use('dcampos/cmp-snippy')
   packer.use('onsails/lspkind.nvim')
-
-  packer.use({
-    'folke/trouble.nvim',
-    config = function()
-      require('trouble').setup({})
-    end,
-  })
 
   -- Lua module collection
   packer.use('echasnovski/mini.nvim')
