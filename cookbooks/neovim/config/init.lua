@@ -92,6 +92,12 @@ vim.keymap.set({'n'}, '<Leader>lt', '<cmd>Telescope lsp_type_definitions<cr>')
 -- Telescope file_browser
 vim.keymap.set({'n'}, '<Leader>fn', '<cmd>Telescope file_browser<cr>')
 
+-- LSP
+vim.keymap.set({'n'}, '<Leader>lh', vim.lsp.buf.hover)
+vim.keymap.set({'n'}, '<Leader>lf', vim.lsp.buf.formatting)
+vim.keymap.set({'n'}, '<Leader>rn', vim.lsp.buf.rename)
+vim.keymap.set({'n'}, '<Leader>ca', vim.lsp.buf.code_action)
+
 
 -- Commands ===================================================
 

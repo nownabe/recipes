@@ -1,9 +1,5 @@
 local on_attach = function(client, bufnr)
-  local bufopts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set('n', '<Leader>lh', vim.lsp.buf.hover, bufopts)
-  vim.keymap.set('n', '<Leader>lf', vim.lsp.buf.formatting, bufopts)
-  vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<Leader>ca', vim.lsp.buf.code_action, bufopts)
+  -- local bufopts = { noremap = true, silent = true, buffer = bufnr }
 end
 
 local capabilities = require('cmp_nvim_lsp')
