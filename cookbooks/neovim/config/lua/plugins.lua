@@ -40,6 +40,37 @@ local startup_ui = function(use)
   })
 end
 
+-- Languages & frameworks
+
+local startup_languages = function(use)
+  -- Flutter
+  use({'akinsho/flutter-tools.nvim', ft = {'dart'}})
+
+  -- Go
+  use({'ray-x/go.nvim', ft = {'go'}})
+
+  -- Markdown
+  use({
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
+    ft = {'markdown'},
+  })
+  use({
+    'dhruvasagar/vim-table-mode',
+    config = function()
+      vim.g.table_mode_corner = '|'
+      vim.api.nvim_command('TableModeEnable')
+    end,
+    ft = {'markdown'},
+  })
+
+  -- TypeScript
+  use({
+    'jose-elias-alvarez/typescript.nvim',
+    ft = {'typescript', 'typescriptreact'},
+  })
+end
+
 return require('packer').startup(function(use)
   use({'wbthomason/packer.nvim', opt = true})
 
@@ -102,25 +133,5 @@ return require('packer').startup(function(use)
   use('terrortylor/nvim-comment')
 
   startup_ui(use)
-
-  -- Language & Frameworks
-  use({'akinsho/flutter-tools.nvim', ft = {'dart'}})
-  use({'ray-x/go.nvim', ft = {'go'}})
-  use({
-    'jose-elias-alvarez/typescript.nvim',
-    ft = {'typescript', 'typescriptreact'},
-  })
-  use({
-    'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end,
-    ft = {'markdown'},
-  })
-  use({
-    'dhruvasagar/vim-table-mode',
-    config = function()
-      vim.g.table_mode_corner = '|'
-      vim.api.nvim_command('TableModeEnable')
-    end,
-    ft = {'markdown'},
-  })
+  startup_languages(use)
 end)
