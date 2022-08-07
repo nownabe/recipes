@@ -1,5 +1,45 @@
 vim.cmd('packadd packer.nvim')
 
+-- UI plugins
+
+local startup_ui = function(use)
+  -- Colorscheme
+  use({
+    'EdenEast/nightfox.nvim',
+    config = function() vim.cmd('colorscheme nightfox') end,
+  })
+
+  -- Status line
+  use({
+    'nvim-lualine/lualine.nvim',
+    config = function() require('config/lualine') end,
+  })
+
+  -- Show LSP status
+  use({
+    'j-hui/fidget.nvim',
+    config = function() require('fidget').setup() end,
+  })
+
+  -- Color highlighter
+  use({
+    'norcalli/nvim-colorizer.lua',
+    config = function() require('colorizer').setup() end,
+  })
+
+  -- Better glance at searched information
+  use('kevinhwang91/nvim-hlslens')
+
+  -- Scrollbar
+  use({
+    'petertriho/nvim-scrollbar',
+    config = function()
+      require('scrollbar').setup()
+      require('scrollbar.handlers.search').setup()
+    end,
+  })
+end
+
 return require('packer').startup(function(use)
   use({'wbthomason/packer.nvim', opt = true})
 
@@ -10,9 +50,6 @@ return require('packer').startup(function(use)
 
   -- Speed up loading Lua modules
   use('lewis6991/impatient.nvim')
-
-  -- Colorscheme
-  use('EdenEast/nightfox.nvim')
 
   -- Fuzzy finder
   use('nvim-telescope/telescope.nvim')
@@ -39,12 +76,6 @@ return require('packer').startup(function(use)
   -- Show function signature
   use('ray-x/lsp_signature.nvim')
 
-  -- Show analyzer status
-  use({
-    'j-hui/fidget.nvim',
-    config = function() require('fidget').setup() end,
-  })
-
   -- Open code actions as popup window
   use({'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu'})
 
@@ -70,8 +101,7 @@ return require('packer').startup(function(use)
   -- Comment
   use('terrortylor/nvim-comment')
 
-  -- Status line
-  use('feline-nvim/feline.nvim')
+  startup_ui(use)
 
   -- Language & Frameworks
   use({'akinsho/flutter-tools.nvim', ft = {'dart'}})
