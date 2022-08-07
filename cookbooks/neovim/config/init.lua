@@ -71,6 +71,9 @@ vim.keymap.set({'n'}, '<Leader>wj', '<C-w>j')
 vim.keymap.set({'n'}, '<Leader>wk', '<C-w>k')
 vim.keymap.set({'n'}, '<Leader>wl', '<C-w>l')
 
+-- NeoTree
+vim.keymap.set({'n'}, '<Leader>nt', '<cmd>Neotree<cr>')
+
 -- Telescope
 vim.keymap.set({'n'}, '<Leader>ff', '<cmd>Telescope find_files<cr>')
 vim.keymap.set({'n'}, '<Leader>fb', '<cmd>Telescope buffers<cr>')
@@ -87,9 +90,6 @@ vim.keymap.set({'n'}, '<Leader>lg', '<cmd>Telescope diagnostics<cr>')
 vim.keymap.set({'n'}, '<Leader>li', '<cmd>Telescope lsp_implementations<cr>')
 vim.keymap.set({'n'}, '<Leader>ld', '<cmd>Telescope lsp_definitions<cr>')
 vim.keymap.set({'n'}, '<Leader>lt', '<cmd>Telescope lsp_type_definitions<cr>')
-
--- Telescope file_browser
-vim.keymap.set({'n'}, '<Leader>fn', '<cmd>Telescope file_browser<cr>')
 
 -- LSP
 vim.keymap.set({'n'}, '<Leader>lh', vim.lsp.buf.hover)

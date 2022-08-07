@@ -78,13 +78,21 @@ return require('packer').startup(function(use)
   use('nvim-lua/plenary.nvim')
   use('kyazdani42/nvim-web-devicons')
   use('ray-x/guihua.lua')
+  use('MunifTanjim/nui.nvim')
 
   -- Speed up loading Lua modules
   use('lewis6991/impatient.nvim')
 
+  -- Filer
+  use({
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
+    cmd = "Neotree",
+    config = function() require('config/neo-tree') end,
+  })
+
   -- Fuzzy finder
   use('nvim-telescope/telescope.nvim')
-  use('nvim-telescope/telescope-file-browser.nvim')
 
   -- Git
   use({
