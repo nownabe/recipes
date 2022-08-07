@@ -52,6 +52,8 @@ vim.api.nvim_command('highlight CursorLine gui=underline guifg=NONE guibg=NONE')
 
 -- Plugin Config ==============================================
 
+require('plugins')
+
 require('config/feline')
 require('config/mini')
 require('config/nightfox')
@@ -100,10 +102,9 @@ vim.keymap.set({'n'}, '<Leader>ca', '<cmd>CodeActionMenu<cr>')
 
 -- Commands ===================================================
 
-vim.cmd([[command! PackerInstall packadd packer.nvim | lua require('plugins').install()]])
-vim.cmd([[command! PackerUpdate packadd packer.nvim | lua require('plugins').update()]])
-vim.cmd([[command! PackerSync packadd packer.nvim | lua require('plugins').sync()]])
-vim.cmd([[command! PackerClean packadd packer.nvim | lua require('plugins').clean()]])
-vim.cmd([[command! PackerCompile packadd packer.nvim | lua require('plugins').compile()]])
-
-vim.cmd('autocmd BufWritePost plugins.lua PackerCompile')
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
