@@ -80,4 +80,17 @@ return require('packer').startup(function(use)
     'jose-elias-alvarez/typescript.nvim',
     ft = {'typescript', 'typescriptreact'},
   })
+  use({
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
+    ft = {'markdown'},
+  })
+  use({
+    'dhruvasagar/vim-table-mode',
+    config = function()
+      vim.g.table_mode_corner = '|'
+      vim.api.nvim_command('TableModeEnable')
+    end,
+    ft = {'markdown'},
+  })
 end)

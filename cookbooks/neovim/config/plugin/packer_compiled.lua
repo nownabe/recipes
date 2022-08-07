@@ -145,6 +145,13 @@ _G.packer_plugins = {
     path = "/home/nownabe/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/nownabe/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/nownabe/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -237,6 +244,14 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/nownabe/.local/share/nvim/site/pack/packer/opt/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
+  },
+  ["vim-table-mode"] = {
+    config = { "\27LJ\2\nj\0\0\3\0\a\0\n6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0009\0\5\0'\2\6\0B\0\2\1K\0\1\0\20TableModeEnable\17nvim_command\bapi\6|\22table_mode_corner\6g\bvim\0" },
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/home/nownabe/.local/share/nvim/site/pack/packer/opt/vim-table-mode",
+    url = "https://github.com/dhruvasagar/vim-table-mode"
   }
 }
 
@@ -264,8 +279,9 @@ vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
 vim.cmd [[au FileType typescript ++once lua require("packer.load")({'typescript.nvim'}, { ft = "typescript" }, _G.packer_plugins)]]
-vim.cmd [[au FileType go ++once lua require("packer.load")({'go.nvim'}, { ft = "go" }, _G.packer_plugins)]]
 vim.cmd [[au FileType typescriptreact ++once lua require("packer.load")({'typescript.nvim'}, { ft = "typescriptreact" }, _G.packer_plugins)]]
+vim.cmd [[au FileType go ++once lua require("packer.load")({'go.nvim'}, { ft = "go" }, _G.packer_plugins)]]
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim', 'vim-table-mode'}, { ft = "markdown" }, _G.packer_plugins)]]
 vim.cmd [[au FileType dart ++once lua require("packer.load")({'flutter-tools.nvim'}, { ft = "dart" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
