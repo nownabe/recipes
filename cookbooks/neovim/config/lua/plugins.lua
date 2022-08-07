@@ -25,6 +25,11 @@ return require('packer').startup(function(use)
     config = function() require('gitsigns').setup() end,
   })
 
+  -- Parser generator and incremental parsing
+  use({
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+  })
 
   -- Language server
   use('neovim/nvim-lspconfig')
