@@ -54,7 +54,6 @@ vim.api.nvim_command('highlight CursorLine gui=underline guifg=NONE guibg=NONE')
 
 require('plugins')
 
--- require('config/lualine')
 require('config/mini')
 require('config/nvim-cmp')
 require('config/nvim-comment')
