@@ -168,9 +168,8 @@ _G.packer_plugins = {
     url = "https://github.com/echasnovski/mini.nvim"
   },
   ["nightfox.nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/nownabe/.local/share/nvim/site/pack/packer/opt/nightfox.nvim",
+    loaded = true,
+    path = "/home/nownabe/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-cmp"] = {
