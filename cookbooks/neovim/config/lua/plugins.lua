@@ -105,7 +105,9 @@ return require('packer').startup(function(use)
   use({
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
+    config = function() require('config/treesitter') end,
   })
+  use('windwp/nvim-ts-autotag')
 
   -- Language server
   use('neovim/nvim-lspconfig')
@@ -139,6 +141,9 @@ return require('packer').startup(function(use)
 
   -- Comment
   use('terrortylor/nvim-comment')
+
+  -- Pairs
+  use({'windwp/nvim-autopairs', config = function() require('nvim-autopairs').setup() end})
 
   startup_ui(use)
   startup_languages(use)
