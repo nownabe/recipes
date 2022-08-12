@@ -100,6 +100,8 @@ return require('packer').startup(function(use)
     tag = 'release',
     config = function() require('gitsigns').setup() end,
   })
+  use({'sindrets/diffview.nvim'})
+  use({'TimUntersberger/neogit', config = function() require('config/neogit') end})
 
   -- Parser generator and incremental parsing
   use({
