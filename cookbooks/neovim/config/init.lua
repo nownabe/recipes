@@ -74,6 +74,9 @@ vim.keymap.set({'n'}, '<Leader>wl', '<C-w>l')
 -- NeoTree
 vim.keymap.set({'n'}, '<Leader>nt', '<cmd>Neotree<cr>')
 
+-- Neogit
+vim.keymap.set({'n'}, '<Leader>ng', '<cmd>Neogit<cr>')
+
 -- Telescope
 vim.keymap.set({'n'}, '<Leader>ff', '<cmd>Telescope find_files<cr>')
 vim.keymap.set({'n'}, '<Leader>fb', '<cmd>Telescope buffers<cr>')
