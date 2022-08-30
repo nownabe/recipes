@@ -15,7 +15,11 @@ template "gitconfig" do
 end
 
 $env.git.configs.each do |root, config|
-  path = File.join(File.expand_path(root), ".gitconfig")
+  dir = File.expand_path(root)
+  path = File.join(dir, ".gitconfig")
+
+  directory dir
+
   template path do
     source "templates/sub-config.erb"
     variables(config: config)
