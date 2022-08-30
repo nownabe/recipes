@@ -1,4 +1,4 @@
-version = "0.4.4"
+version = "0.7.2"
 
 url = "https://github.com/neovim/neovim/releases/download/v#{version}/nvim.appimage"
 bin_path = "#{home}/bin/nvim"
@@ -14,45 +14,19 @@ execute "Make neovim executable" do
   command "chmod +x #{bin_path}"
 end
 
-directory "#{home}/.config/nvim"
-
-%w(
-  base
-  dein
-  denite
-  init
-  keymap
-  options
-).each do |name|
-  link "#{home}/.config/nvim/#{name}.vim" do
-    to File.expand_path("../files/#{name}.vim", __FILE__)
-  end
+link "#{home}/.config/nvim" do
+  to File.expand_path("../config", __FILE__)
 end
 
-directory "#{home}/.config/nvim/dein"
 
-%w(
-  base
-  lang
-  lazy
-).each do |name|
-  link "#{home}/.config/nvim/dein/#{name}.toml" do
-    to File.expand_path("../files/dein/#{name}.toml", __FILE__)
-  end
-end
+# Install packer.nvim
+# https://github.com/wbthomason/packer.nvim/blob/master/README.md#quickstart
 
-directory "#{home}/.config/nvim/sonictemplate"
+packer_path = "#{home}/.local/share/nvim/site/pack/packer/start/packer.nvim"
 
-%w(
-  cpp
-  ruby
-).each do |name|
-  directory "#{home}/.config/nvim/sonictemplate/#{name}"
-  link "#{home}/.config/nvim/sonictemplate/#{name}/pattern.stpl" do
-    to File.expand_path("../files/sonictemplate/#{name}.stpl", __FILE__)
-  end
-end
+directory packer_path
 
-link "#{home}/.config/nvim/ftdetect" do
-  to File.expand_path("../files/ftdetect", __FILE__)
+git packer_path do
+  repository "https://github.com/wbthomason/packer.nvim"
+  depth 1
 end

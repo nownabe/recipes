@@ -4,6 +4,7 @@ build_essentials = %w(
   autoconf
   bison
   build-essential
+  clang
   cmake
   curl
   libbz2-dev
@@ -12,6 +13,7 @@ build_essentials = %w(
   libcurl4-openssl-dev
   libffi-dev
   libgdbm-dev
+  libgtk-3-dev
   libicu-dev
   liblzma-dev
   libmysqlclient-dev
@@ -23,6 +25,7 @@ build_essentials = %w(
   libssl-dev
   libsqlite3-dev
   libtool
+  ninja-build
   p7zip
   p7zip-full
   python3-pip
