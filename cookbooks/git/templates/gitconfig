@@ -19,6 +19,9 @@
 [gpg]
   program = gpg
 
+[init]
+  defaultBranch = main
+
 [push]
   default = simple
 
