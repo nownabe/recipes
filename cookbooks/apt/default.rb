@@ -54,7 +54,7 @@ packages = [
   "dfu-programmer",         # device firmware update (DFU) based USB programmer for Atmel chips
   "dfu-util",               # Device firmware update (DFU) USB programmer
   "exfat-fuse",             # read and write exFAT driver for FUSE
-  "exfat-utils",            # utilities to create, check, label and dump exFAT filesystem
+  # "exfat-utils",            # utilities to create, check, label and dump exFAT filesystem
   "fcitx",                  # Flexible Input Method Framework
   "fcitx-mozc",             # Mozc engine for fcitx - Client of the Mozc input method
   "ffmpeg",                 # Tools for transcoding, streaming and playing of multimedia files
