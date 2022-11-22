@@ -64,6 +64,7 @@ packages = [
   "ghex",                   # GNOME Hex editor for files
   "graphviz",               # rich set of graph drawing tools
   "gthumb",                 # image viewer and browser
+  "inotify-tools",          # command-line programs providing a simple interface to inotify
   "jq",                     # lightweight and flexible command-line JSON processor
   "lame",                   # MP3 encoding library (frontend)
   "lhasa",                  # lzh archive decompressor
