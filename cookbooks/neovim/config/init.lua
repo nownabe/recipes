@@ -64,6 +64,9 @@ require('config/telescope')
 -- Keymaps ====================================================
 
 vim.keymap.set({'i'}, 'jj', '<Esc>')
+vim.keymap.set({'n'}, '<Leader>h', '^')
+vim.keymap.set({'n'}, '<Leader>l', '$')
+vim.keymap.set({'n'}, '<Leader>m', '%')
 
 -- windows
 vim.keymap.set({'n'}, '<Leader>wh', '<C-w>h')
@@ -86,19 +89,19 @@ vim.keymap.set({'n'}, '<Leader>fc', '<cmd>Telescope commands<cr>')
 vim.keymap.set({'n'}, '<Leader>fk', '<cmd>Telescope keymaps<cr>')
 
 -- Telescope LSP
-vim.keymap.set({'n'}, '<Leader>lr', '<cmd>Telescope lsp_references<cr>')
-vim.keymap.set({'n'}, '<Leader>lci', '<cmd>Telescope lsp_incoming_calls<cr>')
-vim.keymap.set({'n'}, '<Leader>lco', '<cmd>Telescope lsp_outgoing_calls<cr>')
-vim.keymap.set({'n'}, '<Leader>lg', '<cmd>Telescope diagnostics<cr>')
-vim.keymap.set({'n'}, '<Leader>li', '<cmd>Telescope lsp_implementations<cr>')
-vim.keymap.set({'n'}, '<Leader>ld', '<cmd>Telescope lsp_definitions<cr>')
-vim.keymap.set({'n'}, '<Leader>lt', '<cmd>Telescope lsp_type_definitions<cr>')
+vim.keymap.set({'n'}, '<Leader>;r', '<cmd>Telescope lsp_references<cr>')
+vim.keymap.set({'n'}, '<Leader>;ci', '<cmd>Telescope lsp_incoming_calls<cr>')
+vim.keymap.set({'n'}, '<Leader>;co', '<cmd>Telescope lsp_outgoing_calls<cr>')
+vim.keymap.set({'n'}, '<Leader>;g', '<cmd>Telescope diagnostics<cr>')
+vim.keymap.set({'n'}, '<Leader>;i', '<cmd>Telescope lsp_implementations<cr>')
+vim.keymap.set({'n'}, '<Leader>;d', '<cmd>Telescope lsp_definitions<cr>')
+vim.keymap.set({'n'}, '<Leader>;t', '<cmd>Telescope lsp_type_definitions<cr>')
 
 -- LSP
-vim.keymap.set({'n'}, '<Leader>lh', vim.lsp.buf.hover)
-vim.keymap.set({'n'}, '<Leader>lf', vim.lsp.buf.formatting)
-vim.keymap.set({'n'}, '<Leader>rn', vim.lsp.buf.rename)
-vim.keymap.set({'n'}, '<Leader>ca', '<cmd>CodeActionMenu<cr>')
+vim.keymap.set({'n'}, '<Leader>;h', vim.lsp.buf.hover)
+vim.keymap.set({'n'}, '<Leader>;f', vim.lsp.buf.formatting)
+vim.keymap.set({'n'}, '<Leader>;rn', vim.lsp.buf.rename)
+vim.keymap.set({'n'}, '<Leader>;ca', '<cmd>CodeActionMenu<cr>')
 
 
 -- Commands ===================================================
