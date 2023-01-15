@@ -3,7 +3,7 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = require('cmp_nvim_lsp')
-  .update_capabilities(vim.lsp.protocol.make_client_capabilities())
+  .default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local default_opts = {
   on_attach = on_attach,
@@ -24,8 +24,8 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
   ensure_installed = {
-    "black",
-    "prettier",
+    --"black",
+    --"prettier",
     "solargraph",
   },
   automatic_installation = true,

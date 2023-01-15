@@ -1,4 +1,4 @@
-version = "0.7.2"
+version = "0.8.1"
 
 url = "https://github.com/neovim/neovim/releases/download/v#{version}/nvim.appimage"
 bin_path = "#{home}/bin/nvim"
