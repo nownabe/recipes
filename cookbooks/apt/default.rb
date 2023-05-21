@@ -68,6 +68,7 @@ packages = [
   "jq",                     # lightweight and flexible command-line JSON processor
   "lame",                   # MP3 encoding library (frontend)
   "lhasa",                  # lzh archive decompressor
+  "libfuse-dev",            # Filesystem in Userspace
   "libgd-dev",              # GD Graphics Library (development version)
   "libnewlib-arm-none-eabi", # C library and math library compiled for bare metal using Cortex A/R/M
   "libonig-dev",            # regular expressions library — development files
