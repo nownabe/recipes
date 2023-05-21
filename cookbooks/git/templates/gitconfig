@@ -25,6 +25,9 @@
 [push]
   default = simple
 
+[pull]
+  rebase = true
+
 [user]
   name  = <%= @user_name %>
   email = <%= @user_email %>
