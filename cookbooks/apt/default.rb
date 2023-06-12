@@ -2,11 +2,13 @@
 
 build_essentials = %w(
   autoconf
+  autopoint
   bison
   build-essential
   clang
   cmake
   curl
+  gperf
   libbz2-dev
   libc++1
   libc++abi1
@@ -86,6 +88,8 @@ packages = [
   "rpm",                    # package manager for RPM
   "shellcheck",             # lint tool for shell scripts
   "silversearcher-ag",      # very fast grep-like program, alternative to ack-grep
+  "texi2html",              # Convert Texinfo files to HTML
+  "texinfo",                # Documentation system for on-line information and printed output
   "tree",                   # displays an indented directory tree, in color
   "xdg-utils",              # desktop integration utilities from freedesktop.org
   "webp",                   # Lossy compression of digital photographic images.
