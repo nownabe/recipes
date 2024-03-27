@@ -39,7 +39,7 @@ else
   include_recipe "./cookbooks/dart"
   include_recipe "./cookbooks/direnv"
   include_recipe "./cookbooks/discord" unless is_wsl?
-  include_recipe "./cookbooks/docker"
+  # include_recipe "./cookbooks/docker"
   # include_recipe "./cookbooks/ergodox"
   include_recipe "./cookbooks/fzf"
   # include_recipe "./cookbooks/gcloud"

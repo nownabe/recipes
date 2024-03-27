@@ -2,7 +2,8 @@
   l = log --graph --oneline --all --decorate
   co = checkout
   pp = pull --prune
-  s = switch
+  s = status
+  sw = switch
 
 [commit]
   template = <%= @home %>/.commit_template
