@@ -13,6 +13,7 @@ $env = Hashie::Mash.new(
           signingkey: "",
         },
       },
+    },
   },
   github: {
     token: "",
